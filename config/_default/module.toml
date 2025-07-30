@@ -17,6 +17,14 @@ source = 'static'
 target = 'assets'
 
 [[mounts]]
+source = 'layouts'
+target = 'layouts'
+
+[[mounts]]
 disableWatch = true
 source = 'hugo_stats.json'
 target = 'assets/notwatching/hugo_stats.json'
+
+[[mounts]]
+source = "core"
+target = "layouts/partials/_bookshop"
