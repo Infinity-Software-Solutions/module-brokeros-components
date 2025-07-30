@@ -1,0 +1,63 @@
+<section>
+    <div class="c-testimonials-tailwindui-grid relative isolate bg-({{ .background_color }}) dark:bg-(--bos-color-surface-dark) pt-16 pb-16 sm:pt-16">
+        <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl" aria-hidden="true">
+            <div class="ml-[max(50%,38rem)] aspect-1313/771 w-328.25 bg-linear-to-tr 
+                        from-({{ .background_gradient.from_color }}) 
+                        to-({{ .background_gradient.to_color }})" 
+                        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+        </div>
+        <div class="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end" aria-hidden="true">
+            <div class="ml-[-22rem] aspect-1313/771 w-328.25 flex-none origin-top-right rotate-30 bg-linear-to-tr 
+                        from-({{ .background_gradient.from_color }}) 
+                        to-({{ .background_gradient.to_color }}) xl:mr-[calc(50%-12rem)] xl:ml-0" 
+                        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+        </div>
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center">
+                <h2 class="text-base/7 font-semibold text-({{ .subheading.text_color }}) dark:text-({{ .subheading.text_color_dark }})">
+                    {{ .subheading.subheading_text}}
+                </h2>
+                <p class="mt-2 text-4xl font-semibold tracking-tight text-balance text-({{ .heading.text_color }}) dark:text-({{ .heading.text_color_dark }}) sm:text-5xl">
+                    {{ .heading.heading_text }}
+                </p>
+            </div>
+            <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-({{ .testimonial_text_color }}) dark:text-({ testimonial_text_color_dark }}) sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4"> 
+                <div class="space-y-8 xl:contents xl:space-y-0"> 
+                    {{ range .testimonials }}
+                        <div class="space-y-8 xl:row-span-2">
+                            <figure class="rounded-2xl bg-({{ .background_color }}) dark:bg-({{ .background_color_dark }}) p-6 shadow-lg ring-1 ring-gray-900/5">
+                                <blockquote class="text-({{ .testimonial_text_color }}) dark:text-({ testimonial_text_color_dark }})">
+                                <p>
+                                    {{ .quote }}
+                                </p>
+                                </blockquote>
+                                <figcaption class="mt-6 flex items-center gap-x-4">
+                                    {{ with .image }}
+                                            <img class="size-10 rounded-full bg-({{ .background_color }}) dark:bg-({{ .background_color_dark }})" src="{{ . }}" alt="Photo of {{ .name }}">
+                                    {{ else }}
+                                        <div class="mb-6 flex size-10 items-center justify-center rounded-lg ">
+                                            <i class="fa-2x fa-solid fa-user"></i>
+                                        </div>   
+                                    {{ end }} 
+                                <div>
+                                    <div class="font-semibold">{{ .name }}</div>
+                                    <div class="text-({{ .testimonial_text_color }}) dark:text-({ testimonial_text_color_dark }})">
+                                        {{ with .title }}
+                                            {{ . }}, 
+                                        {{ end }}
+                                        {{ with .company }}
+                                            {{ . }}
+                                        {{ end }}
+                                    </div>
+                                </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

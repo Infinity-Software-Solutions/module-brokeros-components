@@ -1,0 +1,98 @@
+<!-- Derived from Three column bento grid at: https://tailwindcss.com/plus/ui-blocks/marketing/sections/bento-grids -->
+<section>
+    <div class="c-bento-grid-tailwindui-three-column bg-({{ .background_color }}) dark:bg-({{ .background_color_dark }}) py-12 sm:py-12">
+        <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+            <h2 class="text-center text-base/7 font-semibold text-({{ .announcement.text_color }}) dark:text-({{ .announcement.text_color_dark }})">
+                {{ .announcement.announcement_text }}
+            </h2>
+            <p class="mx-auto mt-2 max-w-max text-center text-4xl font-semibold tracking-tight text-balance text-({{ .heading.text_color }}) dark:text-({{ .heading.text_color_dark }}) sm:text-5xl">
+                {{ .heading.heading_text }}
+            </p>
+            <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+                {{ with .column_1 }}
+                    <div class="relative lg:row-span-2">
+                        <div class="absolute inset-px rounded-lg bg-({{ .background_color }}) dark:bg-({{ .background_color_dark }}) lg:rounded-l-4xl">
+                        </div>
+                        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+                            <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                                <p class="mt-2 text-lg font-medium tracking-tight text-({{ .heading.text_color }}) dark:text-({{ .heading.text_color_dark }}) max-lg:text-center">
+                                    {{ .heading.heading_text }}
+                                </p>
+                                <p class="mt-2 max-w-lg text-sm/6 text-({{ .subheading.text_color }}) dark:text-({{ .subheading.text_color_dark }}) max-lg:text-center">
+                                    {{ .subheading.subheading_text }}
+                                </p>
+                            </div>
+                            <div class="@container relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm">
+                                <div class="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
+                                    <img src="{{ .image.image_path }}" alt="{{ .image.image_alt }}" class="size-full object-cover object-top" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 lg:rounded-l-4xl">  
+                        </div>
+                    </div>
+                {{ end }}
+                {{ with .column_2_row_1 }}
+                    <div class="relative max-lg:row-start-1">
+                        <div class="absolute inset-px rounded-lg bg-({{ .background_color }}) dark:bg-({{ .background_color_dark }}) max-lg:rounded-t-4xl"></div>
+                        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+                        <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                            <p class="mt-2 text-lg font-medium tracking-tight text-({{ .heading.text_color }}) dark:text-({{ .heading.text_color_dark }}) max-lg:text-center">
+                                {{ .heading.heading_text }}
+                            </p>
+                            <p class="mt-2 max-w-lg text-sm/6 text-({{ .subheading.text_color }}) dark:text-({{ .subheading.text_color_dark }}) max-lg:text-center">
+                                {{ .subheading.subheading_text }}
+                            </p>
+                        </div>
+                        <div class="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
+                            <img src="{{ .image.image_path }}" alt="{{ .image.image_alt }}" class="w-full max-lg:max-w-xs" />
+                        </div>
+                        </div>
+                        <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl"></div>
+                    </div>
+                {{ end }}
+                {{ with .column_2_row_2 }}
+                    <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
+                        <div class="absolute inset-px rounded-lg bg-({{ .background_color }}) dark:bg-({{ .background_color_dark }}"></div>
+                        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
+                        <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                            <p class="mt-2 text-lg font-medium tracking-tight text-({{ .heading.text_color }}) dark:text-({{ .heading.text_color_dark }}) max-lg:text-center">
+                                {{ .heading.heading_text }}
+                            </p>
+                            <p class="mt-2 max-w-lg text-sm/6 text-({{ .subheading.text_color }}) dark:text-({{ .subheading.text_color_dark }}) max-lg:text-center">
+                                {{ .subheading.subheading_text }}
+                            </p>
+                        </div>
+                        <div class="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
+                            <img src="{{ .image.image_path }}" alt="{{ .image.image_alt }}" class="h-[min(152px,40cqw)] object-cover" />
+                        </div>
+                        </div>
+                        <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5"></div>
+                    </div>
+                {{ end }}
+                {{ with .column_3 }}
+                    <div class="relative lg:row-span-2">
+                        <div class="absolute inset-px rounded-lg bg-({{ .background_color }}) dark:bg-({{ .background_color_dark }} max-lg:rounded-b-4xl lg:rounded-r-4xl"></div>
+                        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
+                            <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                                <p class="mt-2 text-lg font-medium tracking-tight text-({{ .heading.text_color }}) dark:text-({{ .heading.text_color_dark }}) max-lg:text-center">
+                                    {{ .heading.heading_text }}
+                                </p>
+                                <p class="mt-2 max-w-lg text-sm/6 text-({{ .subheading.text_color }}) dark:text-({{ .subheading.text_color_dark }}) max-lg:text-center">
+                                    {{ .subheading.subheading_text }}
+                                </p>
+                            </div>
+                            <div class="relative min-h-[30rem] w-full grow">
+                                <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
+                                    <img class="h-full object-center" src="{{ .image.image_path }}" alt="{{ .image.image_path }}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-b-4xl lg:rounded-r-4xl">
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,57 @@
+<!-- Derived from https://www.landingfolio.com/library/hero/tailwind?id=6203626ebbf6b2cbc9a05eeb&tab=code -->
+<section>
+    <div class="c-hero-landingfolio-hero-35 relative pt-40 pb-56 bg-({{ .background_color }}) dark:bg-({{ .background_color_dark }})">
+        <div class="absolute inset-0 lg:hidden">
+            <img class="object-cover object-left w-full h-full opacity-50" src="{{ .background_image.image_path }}" alt="{{ .background_image.alt_text }}" />
+        </div>
+        <div class="relative">
+            <div class="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
+                <div class="grid items-center grid-cols-1 lg:grid-cols-2">
+                    <div>
+                        <h1 class="font-sans text-base font-normal tracking-tight text-({{ .announcement.text_color }}) dark:text-({{ .announcement.text_color_dark }}) text-opacity-70">
+                            {{ .announcement.announcement_text }}
+                        </h1>
+                        <p class="mt-6 tracking-tighter text-({{ .heading.text_color }}) dark:text-({{ .heading.text_color_dark }})">
+                            <span class="font-sans font-normal text-7xl">
+                                {{ .heading.heading_text }}
+                            </span><br />
+                            <!-- <span class="font-serif italic font-normal text-8xl">perfect loaf</span> -->
+                        </p>
+                        <p class="mt-12 font-sans text-base font-normal leading-7 text-({{ .subheading.text_color }}) dark:text-({{ .subheading.text_color_dark }}) text-opacity-70">
+                            {{ .subheading.subheading_text }}
+                        </p>                       
+                    </div>
+                    <div class="relative w-full overflow-hidden bg-cover bg-[50%] bg-no-repeat">
+                        <img
+                            src="{{ .background_image.image_path }}"
+                            alt="{{ .background_image.alt_text }}"
+                            class="w-full" />
+                        <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-(--bos-color-primary) bg-fixed opacity-15">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute inset-x-0 bottom-0 z-10">
+            <div class="relative py-8 bg-white">
+                <div class="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
+                    <div class="md:flex md:items-center md:justify-between">
+                        <p class="font-sans text-xl font-normal tracking-tight text-({{ .cta.text_color }}) dark:text-({{ .cta.text_color_dark }})">
+                            {{ .cta.cta_text }}
+                        </p>
+                        <div class="flex items-center justify-start mt-4 space-x-3 md:mt-0 md:justify-end sm:space-x-4">
+                            {{ with .buttons }}
+                                <div class="buttons">
+                                    {{ range . }}
+                                        {{ partial "bookshop" . }}
+                                    {{ end }}
+                                </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

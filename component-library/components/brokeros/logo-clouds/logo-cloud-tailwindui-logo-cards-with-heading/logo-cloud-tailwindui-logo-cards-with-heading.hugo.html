@@ -1,0 +1,43 @@
+<section>
+    <div class="c-logo-cloud-tailwindui-logo-cards-with-heading bg-({{ .background_color }}) dark:bg-({{ .background_color_dark }}) py-12 sm:py-12">
+         <div class="pb-1"></div>
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <h2 class="mt-6 text-center text-lg/8 font-semibold text-({{ .heading.text_color }}) dark:text-({{ .heading.text_color_dark }})">
+                    {{ .heading.heading_text }}
+                </h2>
+            </div>
+            <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <img class="w-full" src="{{ .logo_images.image_1.image_path }}" alt="{{ .logo_images.image_1.alt_text }}">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">{{ .logo_images.image_1.name }}</div>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <img class="w-full" src="{{ .logo_images.image_2.image_path }}" alt="{{ .logo_images.image_2.alt_text }}">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">{{ .logo_images.image_2.name }}</div>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <img class="w-full" src="{{ .logo_images.image_3.image_path }}" alt="{{ .logo_images.image_3.alt_text }}">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">{{ .logo_images.image_3.name }}</div>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <img class="w-full" src="{{ .logo_images.image_4.image_path }}" alt="{{ .logo_images.image_4.alt_text }}">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">{{ .logo_images.image_4.name }}</div>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <img class="w-full" src="{{ .logo_images.image_5.image_path }}" alt="{{ .logo_images.image_5.alt_text }}">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">{{ .logo_images.image_5.name }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

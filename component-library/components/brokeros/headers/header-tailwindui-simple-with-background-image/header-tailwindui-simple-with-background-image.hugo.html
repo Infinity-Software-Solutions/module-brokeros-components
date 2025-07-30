@@ -1,0 +1,23 @@
+<section>
+    <div class="c-header-tailwindui-simple-with-background-image
+    bg-(--bos-color-primary) 
+    bg-blend-soft-light relative min-h-96 
+    w-full 
+    bg-[url('{{ .background_image.image_path }}')] 
+    bg-cover 
+    bg-center 
+    bg-no-repeat">
+    <div class="-z-10 absolute inset-0 h-screen w-full after:bg-(--bos-color-primary)">
+    </div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="pt-6 text-4xl font-bold tracking-tight text-white dark:text-white sm:text-6xl">
+            {{ .heading.heading_text}}
+        </h2>
+        <p class="mt-6 pb-6 text-lg leading-8 text-(--bos-color-on-container-overlay) dark:text-gray-300">
+            {{ .subheading.subheading_text}}
+        </p>
+        </div>
+    </div>
+    </div>
+</section>

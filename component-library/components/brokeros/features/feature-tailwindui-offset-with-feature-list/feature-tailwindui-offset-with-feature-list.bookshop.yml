@@ -1,0 +1,68 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Feature - Title with offset feature list"
+  description: A collection of service features to highlight.
+  icon: truck
+  tags: 
+    - Features
+    - Products
+    - Services
+    - Content
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_color: '--bos-color-surface'
+  background_color_dark: '--bos-color-surface-dark'
+  background_gradient:
+    from_color: '--bos-color-primary'
+    to_color: '--bos-color-container'
+  announcement:
+    announcement_text: All-in-one platform
+    text_color: '--bos-color-on-surface-variant'
+    text_color_dark: '--bos-color-on-surface-variant-dark'
+  heading:
+    heading_text: Grow, scale and thrive your freight brokerage.
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+  subheading:
+    subheading_text: BrokerOS is a suite of applications and services that allows freight brokers to maximize their technology investment by unifying — and acting on — data collected in mission-critical applications.
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+    
+  features:
+  - title: "Web Site Lead Generation"
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+    check_color: '--bos-color-container'
+    check_color_dark: '--bos-color-container-dark'
+    content: "Beautiful, fast, standards-driven website that captures lead contact information in real-time -- enabling your sales teams to identify and win contracts faster than your competitors."
+
+  - title: "Competitive Benchmarking and Improvement"
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+    check_color: '--bos-color-container'
+    check_color_dark: '--bos-color-container-dark'
+    content: "Continuous monitoring of your website's performance against competitors. Using AI, we take research-backed steps to improve your website content so you can overtake their competition. "
+  
+  - title: "Customer Relationship Management"
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+    check_color: '--bos-color-container'
+    check_color_dark: '--bos-color-container-dark'
+    content: "Available in Q3 2025, the BrokerOS CRM integrates with BrokerOS Web to automate lead capture, deal generation, and account management data. Out of the gate, it will integrate with BrokerPro TMS, and we will integrate with other TMSs as customers demand."
+
+  - title: "Business Analytics"
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+    check_color: '--bos-color-container'
+    check_color_dark: '--bos-color-container-dark'
+    content: "Data that used to be hidden in different applications and silos will be revealed. BrokerOS Business Intelligence will combine all of the data from your online sources into a data warehouse -- allowing you to thoroughly understand and improve your business."
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

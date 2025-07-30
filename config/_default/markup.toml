@@ -1,0 +1,15 @@
+#See https://gohugo.io/configuration/markup/
+
+[goldmark]
+[goldmark.renderer]
+unsafe = true
+hardWraps = true
+
+[highlight]
+style = 'monokai' # see https://xyproto.github.io/splash/docs/all.html
+lineNumbersInTable = false
+
+[tableOfContents]
+startLevel = 2
+endLevel = 5
+ordered = true

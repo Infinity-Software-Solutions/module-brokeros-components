@@ -1,0 +1,102 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Form - Freight Quote"
+  description: A form to receive freight quote requests.
+  icon: fa-pen
+  tags:
+    - Form
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  form_provider: zoho_forms
+  background_color: '--bos-color-container-variant'
+  background_color_dark: '--bos-color-container-variant-dark'
+  heading:
+    heading_text: Get a freight quote
+    text_color: '--bos-color-on-container-overlay'
+    text_color_dark: '--bos-color-on-container-dark'
+  form:
+    first_name:
+      label: First Name
+      text_color: '--bos-color-on-container-overlay'
+      text_color_dark: '--bos-color-on-surface-dark'
+    last_name:
+      label: Last Name
+      text_color: '--bos-color-on-container-overlay'
+      text_color_dark: '--bos-color-on-surface-dark'
+    company:
+      label: Company
+      text_color: '--bos-color-on-container-overlay'
+      text_color_dark: '--bos-color-on-surface-dark'
+    email:
+      label: Email
+      text_color: '--bos-color-on-container-overlay'
+      text_color_dark: '--bos-color-on-surface-dark'
+    phone:
+      label: Phone
+      text_color: '--bos-color-on-container-overlay'
+      text_color_dark: '--bos-color-on-surface-dark'
+    origination_header:
+      label: Origination
+      text_color: '--bos-color-on-container-overlay'
+      text_color_dark: '--bos-color-on-surface-dark'
+    origination_city:
+      label: City
+      text_color: '--bos-color-on-container-overlay'
+      text_color_dark: '--bos-color-on-surface-dark'
+    origination_state_province:
+      label: 'State / Province'
+      enable:
+        canada: true
+        mexico: true
+        united_states: true
+      text_color: '--bos-color-on-container-overlay'
+      text_color_dark: '--bos-color-on-surface-dark'
+    pickup_date:
+      label: Pick-Up Date
+      text_color: '--bos-color-on-container-overlay'
+      text_color_dark: '--bos-color-on-surface-dark'
+    destination_header:
+      label: Destination
+      text_color: '--bos-color-on-container-overlay'
+      text_color_dark: '--bos-color-on-surface-dark'
+    destination_city:
+      label: City
+      text_color: '--bos-color-on-container-overlay'
+      text_color_dark: '--bos-color-on-surface-dark'
+    destination_state_province:
+      enable:
+        canada: true
+        mexico: true
+        united_states: true
+      label: State / Province
+      text_color: '--bos-color-on-container-overlay'
+      text_color_dark: '--bos-color-on-surface-dark'
+    delivery_date:
+      label: Delivery Date
+      text_color: '--bos-color-on-container-overlay'
+      text_color_dark: '--bos-color-on-surface-dark'
+    message:
+      label: Shipment Description
+      text_color: '--bos-color-on-container-overlay'
+      text_color_dark: '--bos-color-on-surface-dark'
+  buttons:
+    - _bookshop_name: buttons/button-tailwindui-primary-form-submit
+      button_text: Get Rate Quote
+      button_aria_label: Get Started button.
+      background_color: '--bos-color-on-container'
+      text_color: '--bos-color-on-surface-dark'
+      background_color_dark: '--bos-color-on-container-dark'
+      hover: '--bos-color-container-variant-dark'
+      hover_dark: '--bos-color-container-variant'
+      text_color_dark: '--bos-color-on-surface'
+      type: submit
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

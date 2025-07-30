@@ -1,0 +1,6 @@
+#See https://gohugo.io/configuration/sitemap/
+
+  changeFreq = 'monthly'
+  disable = false
+  filename = 'sitemap.xml'
+  priority = -1

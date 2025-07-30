@@ -1,0 +1,3 @@
+#See https://gohugo.io/configuration/outputs/
+
+home = ["HTML", "RSS", "WebAppManifest"]

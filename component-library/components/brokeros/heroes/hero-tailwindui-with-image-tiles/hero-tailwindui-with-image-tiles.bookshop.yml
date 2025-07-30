@@ -1,0 +1,78 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Hero with 5 image tiles"
+  description: Heading, text, image tiles and buttons.
+  icon: "cottage"
+  tags:
+    - Heading
+    - Text
+    - Image
+    - Buttons
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_color: '--bos-color-surface'
+  background_color_dark: '--bos-color-surface-dark'
+  background_gradient:
+    from_color: '--bos-color-primary'
+    to_color: '--bos-color-container'
+  background_image:
+    image_path: /images/bos-defaults/heroes/truck-on-bridge-2160w-1440h.png
+    alt_text: >-
+      A photograph of a semi truck driving over a bridge.
+  heading:
+    heading_text: Get ready to see what excellence in logistics looks like.
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+  subheading:
+    subheading_text: We serve the world's most demanding shippers.
+    text_color: '--bos-color-on-surface-variant'
+    text_color_dark: '--bos-color-on-surface-dark'
+  tile_images:
+    image_1: 
+      image_path: /images/bos-defaults/heroes/truck-on-bridge-2160w-1440h.png
+      alt_text: Photo of a semi truck on a bridge.
+    image_2:
+      image_path: /images/bos-defaults/heroes/yellow-truck-horizon-230w.png
+      alt_text: Photo of a yellow semi truck driving on a rural road.
+    image_3:
+      image_path: /images/bos-defaults/heroes/contaners-2180w.png
+      alt_text: Photo of containers in a shipping port.
+    image_4:
+      image_path: /images/bos-defaults/heroes/container-ship-2180w.png
+      alt_text: Photo of a large ship carrying shipping containers.
+    image_5:
+      image_path: /images/bos-defaults/heroes/warehouse-interior-2180w.png
+      alt_text: Photo of the interior of a warehouse.
+  buttons:
+    - _bookshop_name: buttons/tailwindui-primary
+      button_text: Get Started
+      button_link: /contact
+      button_aria_label: Get Started button.
+      background_color: '--bos-color-on-container'
+      hover_brightness: 0.85
+      text_color: '--bos-color-on-surface-dark'
+      background_color_dark: '--bos-color-on-container-dark'
+      hover: '--bos-color-container-variant-dark'
+      hover_dark: '--bos-color-container-variant'
+      text_color_dark: '--bos-color-on-surface'
+    - _bookshop_name: buttons/tailwindui-arrow
+      button_text: Learn More
+      button_icon: custom-icon-cloudcannon
+      button_link: https://www.cloudcannon.com
+      button_aria_label: Learn more button
+      background_color: '--color-white'
+      hover_brightness: 0.85
+      text_color: '--bos-color-on-surface'
+      hover: '--bos-color-container-variant-dark'
+      hover_dark: '--bos-color-container-variant'
+      text_color_dark: '--bos-color-on-surface-dark'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

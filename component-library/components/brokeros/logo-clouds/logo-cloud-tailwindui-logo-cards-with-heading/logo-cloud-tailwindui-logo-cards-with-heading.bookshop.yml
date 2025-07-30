@@ -1,0 +1,47 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Logo Cloud - Cards"
+  description: Logo cloud on cards.
+  icon: "cottage"
+  tags:
+    - Logo Cloud
+    - Image
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_color: '--bos-color-container-variant'
+  background_color_dark: '--bos-color-container-variant'
+  heading:
+    heading_text: Trusted by elite shippers.
+    text_color: '--bos-color-on-container'
+    text_color_dark: '--bos-color-on-container-dark'
+  logo_images:
+    image_1: 
+      image_path: /images/bos-defaults/logos/logo-cloud/nestle-logo-black.png
+      name: Nestle Foods
+      alt_text: Nestle Foods logo
+    image_2:
+      image_path: /images/bos-defaults/logos/logo-cloud/dell-logo-black.png
+      name: Dell Computers
+      alt_text: Desll Computers logo
+    image_3:
+      image_path: /images/bos-defaults/logos/logo-cloud/ford-logo-black.png
+      name: Ford Motor Company
+      alt_text: Ford Motor Company logo
+    image_4:
+      image_path: /images/bos-defaults/logos/logo-cloud/tyson-foods-logo-black.png
+      name: Tyson Foods
+      alt_text: Tyson Foods logo
+    image_5:
+      image_path: /images/bos-defaults/logos/logo-cloud/cargill-logo-black.png
+      name: Cargill
+      alt_text: Cargill logo
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

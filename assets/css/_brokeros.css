@@ -1,0 +1,1479 @@
+@theme {
+    --color-primary: #aab9ff;
+    --color-secondary: hsl(0, 0%, 50%);
+    --headline-primary-color: var(--color-gray-700);
+    --headline-secondary-color: var(--color-gray-600);
+
+    /* Nickels Colors */
+    --color-barberry-50: #fcffe7;
+    --color-barberry-100: #f7ffc1;
+    --color-barberry-200: #f4ff86;
+    --color-barberry-300: #f6ff41;
+    --color-barberry-400: #fffe0d;
+    --color-barberry-500: #e9dc00;
+    --color-barberry-600: #d1b300;
+    --color-barberry-700: #a68202;
+    --color-barberry-800: #89650a;
+    --color-barberry-900: #74520f;
+    --color-barberry-950: #442c04;
+
+    /* Spartan Colors */
+    --color-burgundy-50: #ffeff2;
+    --color-burgundy-100: #ffdbe2;
+    --color-burgundy-200: #ffbcc9;
+    --color-burgundy-300: #ff8ea4;
+    --color-burgundy-400: #ff4d70;
+    --color-burgundy-500: #ff1745;
+    --color-burgundy-600: #ff0032;
+    --color-burgundy-700: #e2002d;
+    --color-burgundy-800: #ba0025;
+    --color-burgundy-900: #91031f;
+    --color-burgundy-950: #550011;
+
+    /* BrokerOS Colors */
+    /*
+    HEX: 0e416b
+    https://uicolors.app/generate/0e416b
+    */
+    --color-regal-blue-50: #f0f8ff;
+    --color-regal-blue-100: #e1f0fd;
+    --color-regal-blue-200: #bbe1fc;
+    --color-regal-blue-300: #80c8f9;
+    --color-regal-blue-400: #3cabf4;
+    --color-regal-blue-500: #1391e4;
+    --color-regal-blue-600: #0673c3;
+    --color-regal-blue-700: #065b9e;
+    --color-regal-blue-800: #0a4e82;
+    --color-regal-blue-900: #0e416b;
+    --color-regal-blue-950: #092a48;
+    /* 
+    HEX: 0e416b
+    https://www.tints.dev/palette/v1:YnJva2Vyb3MtYmx1ZXwwZTQxNmJ8OTAwfHB8MHwwfDB8MTAwfGE 
+    */
+    --color-brokeros-blue-50: #eef4fe;
+    --color-brokeros-blue-100: #dde9fd;
+    --color-brokeros-blue-200: #b9d3fc;
+    --color-brokeros-blue-300: #92befb;
+    --color-brokeros-blue-400: #59a7f9;
+    --color-brokeros-blue-500: #2b92e8;
+    --color-brokeros-blue-600: #237dc7;
+    --color-brokeros-blue-700: #1c69a8;
+    --color-brokeros-blue-800: #15558a;
+    --color-brokeros-blue-900: #0e416b;
+    --color-brokeros-blue-950: #05233d;
+}
+  
+  @layer base {
+
+  [data-theme='brokeros-blue'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-gray-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-brokeros-blue-900);
+    --bos-color-primary-dark: var(--color-brokeros-blue-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-brokeros-blue-400); 
+    --bos-color-container-dark: var(--color-brokeros-blue-900); 
+    --bos-color-container-variant: var(--color-brokeros-blue-500); 
+    --bos-color-container-variant-dark: var(--color-brokeros-blue-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-brokeros-blue-950);
+    --bos-color-on-surface-variant: var(--color-brokeros-blue-900);
+    --bos-color-on-surface-dark: var(--color-brokeros-blue-200);
+    --bos-color-on-surface-dark-variant: var(--color-brokeros-blue-400);
+
+    --bos-color-on-container: var(--color-brokeros-blue-900);
+    --bos-color-on-container-variant: var(--color-brokeros-blue-800);
+    --bos-color-on-container-dark: var(--color-brokeros-blue-300);
+    --bos-color-on-container-variant-dark: var(--color-brokeros-blue-500);
+    --bos-color-on-container-overlay: var(--color-brokeros-blue-100);
+  }
+
+[data-theme='brokeros-regal-blue'] {
+/*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-gray-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-regal-blue-900);
+    --bos-color-primary-dark: var(--color-regal-blue-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-regal-blue-400); 
+    --bos-color-container-dark: var(--color-regal-blue-900); 
+    --bos-color-container-variant: var(--color-regal-blue-500); 
+    --bos-color-container-variant-dark: var(--color-regal-blue-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-regal-blue-950);
+    --bos-color-on-surface-variant: var(--color-regal-blue-900);
+    --bos-color-on-surface-dark: var(--color-regal-blue-200);
+    --bos-color-on-surface-dark-variant: var(--color-regal-blue-400);
+
+    --bos-color-on-container: var(--color-regal-blue-900);
+    --bos-color-on-container-variant: var(--color-regal-blue-800);
+    --bos-color-on-container-dark: var(--color-regal-blue-300);
+    --bos-color-on-container-variant-dark: var(--color-regal-blue-500);
+    --bos-color-on-container-overlay: var(--color-regal-blue-100);
+  }
+
+  [data-theme='amber'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-gray-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-amber-900);
+    --bos-color-primary-dark: var(--color-amber-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-amber-400); 
+    --bos-color-container-dark: var(--color-amber-900); 
+    --bos-color-container-variant: var(--color-amber-500); 
+    --bos-color-container-variant-dark: var(--color-amber-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-amber-950);
+    --bos-color-on-surface-variant: var(--color-amber-900);
+    --bos-color-on-surface-dark: var(--color-amber-300);
+    --bos-color-on-surface-dark-variant: var(--color-amber-400);
+
+    --bos-color-on-container: var(--color-amber-950);
+    --bos-color-on-container-variant: var(--color-amber-800);
+    --bos-color-on-container-dark: var(--color-amber-300);
+    --bos-color-on-container-variant-dark: var(--color-amber-500);
+    --bos-color-on-container-overlay: var(--color-amber-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-amber-950);
+    --bos-color-on-surface-variant: var(--color-amber-800);
+    --bos-color-on-surface-primary-color: var(--color-amber-900);
+    --bos-color-surface-dark: var(--color-amber-900);
+    --bos-color-on-surface-dark: var(--color-amber-100);
+    --bos-color-container: var(--color-amber-300);
+    --bos-color-on-container: var(--color-amber-950);
+    --bos-color-on-container-variant: var(--color-amber-700);
+    --bos-color-container-dark: var(--color-amber-700);
+    --bos-color-on-container-dark: var(--color-amber-100);
+    --bos-color-on-container-dark-variant: var(--color-amber-300);
+    --bos-color-primary: var(--color-amber-900);
+    --bos-color-primary-container: var(--color-amber-900);
+    --bos-color-on-primary-container: var(--color-amber-100);
+    --bos-color-primary-container-dark: var(--color-amber-800);
+    --bos-color-on-primary-container-variant: var(--color-amber-400);
+    */
+  }
+
+  [data-theme='blue'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-gray-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-blue-900);
+    --bos-color-primary-dark: var(--color-blue-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-blue-400); 
+    --bos-color-container-dark: var(--color-blue-900); 
+    --bos-color-container-variant: var(--color-blue-500); 
+    --bos-color-container-variant-dark: var(--color-blue-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-blue-950);
+    --bos-color-on-surface-variant: var(--color-blue-900);
+    --bos-color-on-surface-dark: var(--color-blue-300);
+    --bos-color-on-surface-dark-variant: var(--color-blue-400);
+
+    --bos-color-on-container: var(--color-blue-950);
+    --bos-color-on-container-variant: var(--color-blue-800);
+    --bos-color-on-container-dark: var(--color-blue-300);
+    --bos-color-on-container-variant-dark: var(--color-blue-500);
+    --bos-color-on-container-overlay: var(--color-blue-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-blue-950);
+    --bos-color-on-surface-variant: var(--color-blue-800);
+    --bos-color-on-surface-primary-color: var(--color-blue-900);
+    --bos-color-surface-dark: var(--color-blue-900);
+    --bos-color-on-surface-dark: var(--color-blue-100);
+    --bos-color-container: var(--color-blue-300);
+    --bos-color-on-container: var(--color-blue-950);
+    --bos-color-on-container-variant: var(--color-blue-700);
+    --bos-color-container-dark: var(--color-blue-700);
+    --bos-color-on-container-dark: var(--color-blue-100);
+    --bos-color-on-container-dark-variant: var(--color-blue-300);
+    --bos-color-primary: var(--color-blue-900);
+    --bos-color-primary-container: var(--color-blue-900);
+    --bos-color-on-primary-container: var(--color-blue-100);
+    --bos-color-primary-container-dark: var(--color-blue-800);
+    --bos-color-on-primary-container-variant: var(--color-blue-400);
+    */
+  }
+
+  [data-theme='cyan'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-gray-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-cyan-900);
+    --bos-color-primary-dark: var(--color-cyan-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-cyan-400); 
+    --bos-color-container-dark: var(--color-cyan-900); 
+    --bos-color-container-variant: var(--color-cyan-500); 
+    --bos-color-container-variant-dark: var(--color-cyan-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-cyan-950);
+    --bos-color-on-surface-variant: var(--color-cyan-900);
+    --bos-color-on-surface-dark: var(--color-cyan-300);
+    --bos-color-on-surface-dark-variant: var(--color-cyan-400);
+
+    --bos-color-on-container: var(--color-cyan-950);
+    --bos-color-on-container-variant: var(--color-cyan-800);
+    --bos-color-on-container-dark: var(--color-cyan-300);
+    --bos-color-on-container-variant-dark: var(--color-cyan-500);
+    --bos-color-on-container-overlay: var(--color-cyan-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-cyan-950);
+    --bos-color-on-surface-variant: var(--color-cyan-800);
+    --bos-color-on-surface-primary-color: var(--color-cyan-900);
+    --bos-color-surface-dark: var(--color-cyan-900);
+    --bos-color-on-surface-dark: var(--color-cyan-100);
+    --bos-color-container: var(--color-cyan-300);
+    --bos-color-on-container: var(--color-cyan-950);
+    --bos-color-on-container-variant: var(--color-cyan-700);
+    --bos-color-container-dark: var(--color-cyan-700);
+    --bos-color-on-container-dark: var(--color-cyan-100);
+    --bos-color-on-container-dark-variant: var(--color-cyan-300);
+    --bos-color-primary: var(--color-cyan-900);
+    --bos-color-primary-container: var(--color-cyan-900);
+    --bos-color-on-primary-container: var(--color-cyan-100);
+    --bos-color-primary-container-dark: var(--color-cyan-800);
+    --bos-color-on-primary-container-variant: var(--color-cyan-400);
+    */
+  }
+
+  [data-theme='emerald'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-gray-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-emerald-900);
+    --bos-color-primary-dark: var(--color-emerald-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-emerald-400); 
+    --bos-color-container-dark: var(--color-emerald-900); 
+    --bos-color-container-variant: var(--color-emerald-500); 
+    --bos-color-container-variant-dark: var(--color-emerald-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-emerald-950);
+    --bos-color-on-surface-variant: var(--color-emerald-900);
+    --bos-color-on-surface-dark: var(--color-emerald-300);
+    --bos-color-on-surface-dark-variant: var(--color-emerald-400);
+
+    --bos-color-on-container: var(--color-emerald-950);
+    --bos-color-on-container-variant: var(--color-emerald-800);
+    --bos-color-on-container-dark: var(--color-emerald-300);
+    --bos-color-on-container-variant-dark: var(--color-emerald-500);
+    --bos-color-on-container-overlay: var(--color-emerald-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-emerald-950);
+    --bos-color-on-surface-variant: var(--color-emerald-800);
+    --bos-color-on-surface-primary-color: var(--color-emerald-900);
+    --bos-color-surface-dark: var(--color-emerald-900);
+    --bos-color-on-surface-dark: var(--color-emerald-100);
+    --bos-color-container: var(--color-emerald-300);
+    --bos-color-on-container: var(--color-emerald-950);
+    --bos-color-on-container-variant: var(--color-emerald-700);
+    --bos-color-container-dark: var(--color-emerald-700);
+    --bos-color-on-container-dark: var(--color-emerald-100);
+    --bos-color-on-container-dark-variant: var(--color-emerald-300);
+    --bos-color-primary: var(--color-emerald-900);
+    --bos-color-primary-container: var(--color-emerald-900);
+    --bos-color-on-primary-container: var(--color-emerald-100);
+    --bos-color-primary-container-dark: var(--color-emerald-800);
+    --bos-color-on-primary-container-variant: var(--color-emerald-400);
+    */
+  }
+
+  [data-theme='fuchsia'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-gray-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-fuchsia-900);
+    --bos-color-primary-dark: var(--color-fuchsia-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-fuchsia-400); 
+    --bos-color-container-dark: var(--color-fuchsia-900); 
+    --bos-color-container-variant: var(--color-fuchsia-500); 
+    --bos-color-container-variant-dark: var(--color-fuchsia-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-fuchsia-950);
+    --bos-color-on-surface-variant: var(--color-fuchsia-900);
+    --bos-color-on-surface-dark: var(--color-fuchsia-300);
+    --bos-color-on-surface-dark-variant: var(--color-fuchsia-400);
+
+    --bos-color-on-container: var(--color-fuchsia-950);
+    --bos-color-on-container-variant: var(--color-fuchsia-800);
+    --bos-color-on-container-dark: var(--color-fuchsia-300);
+    --bos-color-on-container-variant-dark: var(--color-fuchsia-500);
+    --bos-color-on-container-overlay: var(--color-fuchsia-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-fuchsia-950);
+    --bos-color-on-surface-variant: var(--color-fuchsia-800);
+    --bos-color-on-surface-primary-color: var(--color-fuchsia-900);
+    --bos-color-surface-dark: var(--color-fuchsia-900);
+    --bos-color-on-surface-dark: var(--color-fuchsia-100);
+    --bos-color-container: var(--color-fuchsia-300);
+    --bos-color-on-container: var(--color-fuchsia-950);
+    --bos-color-on-container-variant: var(--color-fuchsia-700);
+    --bos-color-container-dark: var(--color-fuchsia-700);
+    --bos-color-on-container-dark: var(--color-fuchsia-100);
+    --bos-color-on-container-dark-variant: var(--color-fuchsia-300);
+    --bos-color-primary: var(--color-fuchsia-900);
+    --bos-color-primary-container: var(--color-fuchsia-900);
+    --bos-color-on-primary-container: var(--color-fuchsia-100);
+    --bos-color-primary-container-dark: var(--color-fuchsia-800);
+    --bos-color-on-primary-container-variant: var(--color-fuchsia-400);
+    */
+  }
+
+  [data-theme='gray'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-gray-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-gray-900);
+    --bos-color-primary-dark: var(--color-gray-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-gray-400); 
+    --bos-color-container-dark: var(--color-gray-900); 
+    --bos-color-container-variant: var(--color-gray-500); 
+    --bos-color-container-variant-dark: var(--color-gray-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-gray-950);
+    --bos-color-on-surface-variant: var(--color-gray-900);
+    --bos-color-on-surface-dark: var(--color-gray-300);
+    --bos-color-on-surface-dark-variant: var(--color-gray-400);
+
+    --bos-color-on-container: var(--color-gray-950);
+    --bos-color-on-container-variant: var(--color-gray-800);
+    --bos-color-on-container-dark: var(--color-gray-300);
+    --bos-color-on-container-variant-dark: var(--color-gray-500);
+    --bos-color-on-container-overlay: var(--color-gray-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-gray-950);
+    --bos-color-on-surface-variant: var(--color-gray-800);
+    --bos-color-on-surface-primary-color: var(--color-gray-900);
+    --bos-color-surface-dark: var(--color-gray-900);
+    --bos-color-on-surface-dark: var(--color-gray-100);
+    --bos-color-container: var(--color-gray-300);
+    --bos-color-on-container: var(--color-gray-950);
+    --bos-color-on-container-variant: var(--color-gray-700);
+    --bos-color-container-dark: var(--color-gray-700);
+    --bos-color-on-container-dark: var(--color-gray-100);
+    --bos-color-on-container-dark-variant: var(--color-gray-300);
+    --bos-color-primary: var(--color-gray-900);
+    --bos-color-primary-container: var(--color-gray-900);
+    --bos-color-on-primary-container: var(--color-gray-100);
+    --bos-color-primary-container-dark: var(--color-gray-800);
+    --bos-color-on-primary-container-variant: var(--color-gray-400);
+    */
+  }
+
+  [data-theme='green'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-green-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-green-900);
+    --bos-color-primary-dark: var(--color-green-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-green-400); 
+    --bos-color-container-dark: var(--color-green-900); 
+    --bos-color-container-variant: var(--color-green-500); 
+    --bos-color-container-variant-dark: var(--color-green-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-green-950);
+    --bos-color-on-surface-variant: var(--color-green-900);
+    --bos-color-on-surface-dark: var(--color-green-300);
+    --bos-color-on-surface-dark-variant: var(--color-green-400);
+
+    --bos-color-on-container: var(--color-green-950);
+    --bos-color-on-container-variant: var(--color-green-800);
+    --bos-color-on-container-dark: var(--color-green-300);
+    --bos-color-on-container-variant-dark: var(--color-green-500);
+    --bos-color-on-container-overlay: var(--color-green-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-green-950);
+    --bos-color-on-surface-variant: var(--color-green-800);
+    --bos-color-on-surface-primary-color: var(--color-green-900);
+    --bos-color-surface-dark: var(--color-green-900);
+    --bos-color-on-surface-dark: var(--color-green-100);
+    --bos-color-container: var(--color-green-300);
+    --bos-color-on-container: var(--color-green-950);
+    --bos-color-on-container-variant: var(--color-green-700);
+    --bos-color-container-dark: var(--color-green-700);
+    --bos-color-on-container-dark: var(--color-green-100);
+    --bos-color-on-container-dark-variant: var(--color-green-300);
+    --bos-color-primary: var(--color-green-900);
+    --bos-color-primary-container: var(--color-green-900);
+    --bos-color-on-primary-container: var(--color-green-100);
+    --bos-color-primary-container-dark: var(--color-green-800);
+    --bos-color-on-primary-container-variant: var(--color-green-400);
+    */
+  }
+
+  [data-theme='indigo'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-indigo-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-indigo-900);
+    --bos-color-primary-dark: var(--color-indigo-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-indigo-400); 
+    --bos-color-container-dark: var(--color-indigo-900); 
+    --bos-color-container-variant: var(--color-indigo-500); 
+    --bos-color-container-variant-dark: var(--color-indigo-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-indigo-950);
+    --bos-color-on-surface-variant: var(--color-indigo-900);
+    --bos-color-on-surface-dark: var(--color-indigo-300);
+    --bos-color-on-surface-dark-variant: var(--color-indigo-400);
+
+    --bos-color-on-container: var(--color-indigo-950);
+    --bos-color-on-container-variant: var(--color-indigo-800);
+    --bos-color-on-container-dark: var(--color-indigo-300);
+    --bos-color-on-container-variant-dark: var(--color-indigo-500);
+    --bos-color-on-container-overlay: var(--color-indigo-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-indigo-950);
+    --bos-color-on-surface-variant: var(--color-indigo-800);
+    --bos-color-on-surface-primary-color: var(--color-indigo-900);
+    --bos-color-surface-dark: var(--color-indigo-900);
+    --bos-color-on-surface-dark: var(--color-indigo-100);
+    --bos-color-container: var(--color-indigo-300);
+    --bos-color-on-container: var(--color-indigo-950);
+    --bos-color-on-container-variant: var(--color-indigo-700);
+    --bos-color-container-dark: var(--color-indigo-700);
+    --bos-color-on-container-dark: var(--color-indigo-100);
+    --bos-color-on-container-dark-variant: var(--color-indigo-300);
+    --bos-color-primary: var(--color-indigo-900);
+    --bos-color-primary-container: var(--color-indigo-900);
+    --bos-color-on-primary-container: var(--color-indigo-100);
+    --bos-color-primary-container-dark: var(--color-indigo-800);
+    --bos-color-on-primary-container-variant: var(--color-indigo-400);
+    */
+  }
+
+  [data-theme='lime'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-lime-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-lime-900);
+    --bos-color-primary-dark: var(--color-lime-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-lime-400); 
+    --bos-color-container-dark: var(--color-lime-900); 
+    --bos-color-container-variant: var(--color-lime-500); 
+    --bos-color-container-variant-dark: var(--color-lime-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-lime-950);
+    --bos-color-on-surface-variant: var(--color-lime-900);
+    --bos-color-on-surface-dark: var(--color-lime-300);
+    --bos-color-on-surface-dark-variant: var(--color-lime-400);
+
+    --bos-color-on-container: var(--color-lime-950);
+    --bos-color-on-container-variant: var(--color-lime-800);
+    --bos-color-on-container-dark: var(--color-lime-300);
+    --bos-color-on-container-variant-dark: var(--color-lime-500);
+    --bos-color-on-container-overlay: var(--color-lime-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-lime-950);
+    --bos-color-on-surface-variant: var(--color-lime-800);
+    --bos-color-on-surface-primary-color: var(--color-lime-900);
+    --bos-color-surface-dark: var(--color-lime-900);
+    --bos-color-on-surface-dark: var(--color-lime-100);
+    --bos-color-container: var(--color-lime-300);
+    --bos-color-on-container: var(--color-lime-950);
+    --bos-color-on-container-variant: var(--color-lime-700);
+    --bos-color-container-dark: var(--color-lime-700);
+    --bos-color-on-container-dark: var(--color-lime-100);
+    --bos-color-on-container-dark-variant: var(--color-lime-300);
+    --bos-color-primary: var(--color-lime-900);
+    --bos-color-primary-container: var(--color-lime-900);
+    --bos-color-on-primary-container: var(--color-lime-100);
+    --bos-color-primary-container-dark: var(--color-lime-800);
+    --bos-color-on-primary-container-variant: var(--color-lime-400);
+    */
+  }
+  
+  [data-theme='neutral'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-neutral-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-neutral-900);
+    --bos-color-primary-dark: var(--color-neutral-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-neutral-400); 
+    --bos-color-container-dark: var(--color-neutral-900); 
+    --bos-color-container-variant: var(--color-neutral-500); 
+    --bos-color-container-variant-dark: var(--color-neutral-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-neutral-950);
+    --bos-color-on-surface-variant: var(--color-neutral-900);
+    --bos-color-on-surface-dark: var(--color-neutral-300);
+    --bos-color-on-surface-dark-variant: var(--color-neutral-400);
+
+    --bos-color-on-container: var(--color-neutral-950);
+    --bos-color-on-container-variant: var(--color-neutral-800);
+    --bos-color-on-container-dark: var(--color-neutral-300);
+    --bos-color-on-container-variant-dark: var(--color-neutral-500);
+    --bos-color-on-container-overlay: var(--color-neutral-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-neutral-950);
+    --bos-color-on-surface-variant: var(--color-neutral-800);
+    --bos-color-on-surface-primary-color: var(--color-neutral-900);
+    --bos-color-surface-dark: var(--color-neutral-900);
+    --bos-color-on-surface-dark: var(--color-neutral-100);
+    --bos-color-container: var(--color-neutral-300);
+    --bos-color-on-container: var(--color-neutral-950);
+    --bos-color-on-container-variant: var(--color-neutral-700);
+    --bos-color-container-dark: var(--color-neutral-700);
+    --bos-color-on-container-dark: var(--color-neutral-100);
+    --bos-color-on-container-dark-variant: var(--color-neutral-300);
+    --bos-color-primary: var(--color-neutral-900);
+    --bos-color-primary-container: var(--color-neutral-900);
+    --bos-color-on-primary-container: var(--color-neutral-100);
+    --bos-color-primary-container-dark: var(--color-neutral-800);
+    --bos-color-on-primary-container-variant: var(--color-neutral-400);
+    */
+  }
+
+  [data-theme='orange'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-orange-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-orange-900);
+    --bos-color-primary-dark: var(--color-orange-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-orange-400); 
+    --bos-color-container-dark: var(--color-orange-900); 
+    --bos-color-container-variant: var(--color-orange-500); 
+    --bos-color-container-variant-dark: var(--color-orange-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-orange-950);
+    --bos-color-on-surface-variant: var(--color-orange-900);
+    --bos-color-on-surface-dark: var(--color-orange-300);
+    --bos-color-on-surface-dark-variant: var(--color-orange-400);
+
+    --bos-color-on-container: var(--color-orange-950);
+    --bos-color-on-container-variant: var(--color-orange-800);
+    --bos-color-on-container-dark: var(--color-orange-300);
+    --bos-color-on-container-variant-dark: var(--color-orange-500);
+    --bos-color-on-container-overlay: var(--color-orange-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-orange-950);
+    --bos-color-on-surface-variant: var(--color-orange-800);
+    --bos-color-on-surface-primary-color: var(--color-orange-900);
+    --bos-color-surface-dark: var(--color-orange-900);
+    --bos-color-on-surface-dark: var(--color-orange-100);
+    --bos-color-container: var(--color-orange-300);
+    --bos-color-on-container: var(--color-orange-950);
+    --bos-color-on-container-variant: var(--color-orange-700);
+    --bos-color-container-dark: var(--color-orange-700);
+    --bos-color-on-container-dark: var(--color-orange-100);
+    --bos-color-on-container-dark-variant: var(--color-orange-300);
+    --bos-color-primary: var(--color-orange-900);
+    --bos-color-primary-container: var(--color-orange-900);
+    --bos-color-on-primary-container: var(--color-orange-100);
+    --bos-color-primary-container-dark: var(--color-orange-800);
+    --bos-color-on-primary-container-variant: var(--color-orange-400);
+    */
+  }
+
+  [data-theme='pink'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-pink-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-pink-900);
+    --bos-color-primary-dark: var(--color-pink-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-pink-400); 
+    --bos-color-container-dark: var(--color-pink-900); 
+    --bos-color-container-variant: var(--color-pink-500); 
+    --bos-color-container-variant-dark: var(--color-pink-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-pink-950);
+    --bos-color-on-surface-variant: var(--color-pink-900);
+    --bos-color-on-surface-dark: var(--color-pink-300);
+    --bos-color-on-surface-dark-variant: var(--color-pink-400);
+
+    --bos-color-on-container: var(--color-pink-950);
+    --bos-color-on-container-variant: var(--color-pink-800);
+    --bos-color-on-container-dark: var(--color-pink-300);
+    --bos-color-on-container-variant-dark: var(--color-pink-500);
+    --bos-color-on-container-overlay: var(--color-pink-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-pink-950);
+    --bos-color-on-surface-variant: var(--color-pink-800);
+    --bos-color-on-surface-primary-color: var(--color-pink-900);
+    --bos-color-surface-dark: var(--color-pink-900);
+    --bos-color-on-surface-dark: var(--color-pink-100);
+    --bos-color-container: var(--color-pink-300);
+    --bos-color-on-container: var(--color-pink-950);
+    --bos-color-on-container-variant: var(--color-pink-700);
+    --bos-color-container-dark: var(--color-pink-700);
+    --bos-color-on-container-dark: var(--color-pink-100);
+    --bos-color-on-container-dark-variant: var(--color-pink-300);
+    --bos-color-primary: var(--color-pink-900);
+    --bos-color-primary-container: var(--color-pink-900);
+    --bos-color-on-primary-container: var(--color-pink-100);
+    --bos-color-primary-container-dark: var(--color-pink-800);
+    --bos-color-on-primary-container-variant: var(--color-pink-400);
+    */
+  }
+
+  [data-theme='purple'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-purple-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-purple-900);
+    --bos-color-primary-dark: var(--color-purple-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-purple-400); 
+    --bos-color-container-dark: var(--color-purple-900); 
+    --bos-color-container-variant: var(--color-purple-500); 
+    --bos-color-container-variant-dark: var(--color-purple-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-purple-950);
+    --bos-color-on-surface-variant: var(--color-purple-900);
+    --bos-color-on-surface-dark: var(--color-purple-300);
+    --bos-color-on-surface-dark-variant: var(--color-purple-400);
+
+    --bos-color-on-container: var(--color-purple-950);
+    --bos-color-on-container-variant: var(--color-purple-800);
+    --bos-color-on-container-dark: var(--color-purple-300);
+    --bos-color-on-container-variant-dark: var(--color-purple-500);
+    --bos-color-on-container-overlay: var(--color-purple-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-purple-950);
+    --bos-color-on-surface-variant: var(--color-purple-800);
+    --bos-color-on-surface-primary-color: var(--color-purple-900);
+    --bos-color-surface-dark: var(--color-purple-900);
+    --bos-color-on-surface-dark: var(--color-purple-100);
+    --bos-color-container: var(--color-purple-300);
+    --bos-color-on-container: var(--color-purple-950);
+    --bos-color-on-container-variant: var(--color-purple-700);
+    --bos-color-container-dark: var(--color-purple-700);
+    --bos-color-on-container-dark: var(--color-purple-100);
+    --bos-color-on-container-dark-variant: var(--color-purple-300);
+    --bos-color-primary: var(--color-purple-900);
+    --bos-color-primary-container: var(--color-purple-900);
+    --bos-color-on-primary-container: var(--color-purple-100);
+    --bos-color-primary-container-dark: var(--color-purple-800);
+    --bos-color-on-primary-container-variant: var(--color-purple-400);
+    */
+  }
+
+  [data-theme='red'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-red-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-red-900);
+    --bos-color-primary-dark: var(--color-red-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-red-400); 
+    --bos-color-container-dark: var(--color-red-900); 
+    --bos-color-container-variant: var(--color-red-500); 
+    --bos-color-container-variant-dark: var(--color-red-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-red-950);
+    --bos-color-on-surface-variant: var(--color-red-900);
+    --bos-color-on-surface-dark: var(--color-red-300);
+    --bos-color-on-surface-dark-variant: var(--color-red-400);
+
+    --bos-color-on-container: var(--color-red-950);
+    --bos-color-on-container-variant: var(--color-red-800);
+    --bos-color-on-container-dark: var(--color-red-300);
+    --bos-color-on-container-variant-dark: var(--color-red-500);
+    --bos-color-on-container-overlay: var(--color-red-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-red-950);
+    --bos-color-on-surface-variant: var(--color-red-800);
+    --bos-color-on-surface-primary-color: var(--color-red-900);
+    --bos-color-surface-dark: var(--color-red-900);
+    --bos-color-on-surface-dark: var(--color-red-100);
+    --bos-color-container: var(--color-red-300);
+    --bos-color-on-container: var(--color-red-950);
+    --bos-color-on-container-variant: var(--color-red-700);
+    --bos-color-container-dark: var(--color-red-700);
+    --bos-color-on-container-dark: var(--color-red-100);
+    --bos-color-on-container-dark-variant: var(--color-red-300);
+    --bos-color-primary: var(--color-red-900);
+    --bos-color-primary-container: var(--color-red-900);
+    --bos-color-on-primary-container: var(--color-red-100);
+    --bos-color-primary-container-dark: var(--color-red-800);
+    --bos-color-on-primary-container-variant: var(--color-red-400);
+    */
+  }
+
+  [data-theme='rose'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-rose-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-rose-900);
+    --bos-color-primary-dark: var(--color-rose-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-rose-400); 
+    --bos-color-container-dark: var(--color-rose-900); 
+    --bos-color-container-variant: var(--color-rose-500); 
+    --bos-color-container-variant-dark: var(--color-rose-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-rose-950);
+    --bos-color-on-surface-variant: var(--color-rose-900);
+    --bos-color-on-surface-dark: var(--color-rose-300);
+    --bos-color-on-surface-dark-variant: var(--color-rose-400);
+
+    --bos-color-on-container: var(--color-rose-950);
+    --bos-color-on-container-variant: var(--color-rose-800);
+    --bos-color-on-container-dark: var(--color-rose-300);
+    --bos-color-on-container-variant-dark: var(--color-rose-500);
+    --bos-color-on-container-overlay: var(--color-rose-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-rose-950);
+    --bos-color-on-surface-variant: var(--color-rose-800);
+    --bos-color-on-surface-primary-color: var(--color-rose-900);
+    --bos-color-surface-dark: var(--color-rose-900);
+    --bos-color-on-surface-dark: var(--color-rose-100);
+    --bos-color-container: var(--color-rose-300);
+    --bos-color-on-container: var(--color-rose-950);
+    --bos-color-on-container-variant: var(--color-rose-700);
+    --bos-color-container-dark: var(--color-rose-700);
+    --bos-color-on-container-dark: var(--color-rose-100);
+    --bos-color-on-container-dark-variant: var(--color-rose-300);
+    --bos-color-primary: var(--color-rose-900);
+    --bos-color-primary-container: var(--color-rose-900);
+    --bos-color-on-primary-container: var(--color-rose-100);
+    --bos-color-primary-container-dark: var(--color-rose-800);
+    --bos-color-on-primary-container-variant: var(--color-rose-400);
+    */
+  }
+
+  [data-theme='slate'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-slate-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-slate-900);
+    --bos-color-primary-dark: var(--color-slate-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-slate-400); 
+    --bos-color-container-dark: var(--color-slate-900); 
+    --bos-color-container-variant: var(--color-slate-500); 
+    --bos-color-container-variant-dark: var(--color-slate-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-slate-950);
+    --bos-color-on-surface-variant: var(--color-slate-900);
+    --bos-color-on-surface-dark: var(--color-slate-300);
+    --bos-color-on-surface-dark-variant: var(--color-slate-400);
+
+    --bos-color-on-container: var(--color-slate-950);
+    --bos-color-on-container-variant: var(--color-slate-800);
+    --bos-color-on-container-dark: var(--color-slate-300);
+    --bos-color-on-container-variant-dark: var(--color-slate-500);
+    --bos-color-on-container-overlay: var(--color-slate-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-slate-950);
+    --bos-color-on-surface-variant: var(--color-slate-800);
+    --bos-color-on-surface-primary-color: var(--color-slate-900);
+    --bos-color-surface-dark: var(--color-slate-900);
+    --bos-color-on-surface-dark: var(--color-slate-100);
+    --bos-color-container: var(--color-slate-300);
+    --bos-color-on-container: var(--color-slate-950);
+    --bos-color-on-container-variant: var(--color-slate-700);
+    --bos-color-container-dark: var(--color-slate-700);
+    --bos-color-on-container-dark: var(--color-slate-100);
+    --bos-color-on-container-dark-variant: var(--color-slate-300);
+    --bos-color-primary: var(--color-slate-900);
+    --bos-color-primary-container: var(--color-slate-900);
+    --bos-color-on-primary-container: var(--color-slate-100);
+    --bos-color-primary-container-dark: var(--color-slate-800);
+    --bos-color-on-primary-container-variant: var(--color-slate-400);
+    */
+  }
+
+  [data-theme='stone'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-stone-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-stone-900);
+    --bos-color-primary-dark: var(--color-stone-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-stone-400); 
+    --bos-color-container-dark: var(--color-stone-900); 
+    --bos-color-container-variant: var(--color-stone-500); 
+    --bos-color-container-variant-dark: var(--color-stone-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-stone-950);
+    --bos-color-on-surface-variant: var(--color-stone-900);
+    --bos-color-on-surface-dark: var(--color-stone-300);
+    --bos-color-on-surface-dark-variant: var(--color-stone-400);
+
+    --bos-color-on-container: var(--color-stone-950);
+    --bos-color-on-container-variant: var(--color-stone-800);
+    --bos-color-on-container-dark: var(--color-stone-300);
+    --bos-color-on-container-variant-dark: var(--color-stone-500);
+    --bos-color-on-container-overlay: var(--color-stone-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-stone-950);
+    --bos-color-on-surface-variant: var(--color-stone-800);
+    --bos-color-on-surface-primary-color: var(--color-stone-900);
+    --bos-color-surface-dark: var(--color-stone-900);
+    --bos-color-on-surface-dark: var(--color-stone-100);
+    --bos-color-container: var(--color-stone-300);
+    --bos-color-on-container: var(--color-stone-950);
+    --bos-color-on-container-variant: var(--color-stone-700);
+    --bos-color-container-dark: var(--color-stone-700);
+    --bos-color-on-container-dark: var(--color-stone-100);
+    --bos-color-on-container-dark-variant: var(--color-stone-300);
+    --bos-color-primary: var(--color-stone-900);
+    --bos-color-primary-container: var(--color-stone-900);
+    --bos-color-on-primary-container: var(--color-stone-100);
+    --bos-color-primary-container-dark: var(--color-stone-800);
+    --bos-color-on-primary-container-variant: var(--color-stone-400);
+    */
+  }
+
+  [data-theme='sky'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-sky-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-sky-900);
+    --bos-color-primary-dark: var(--color-sky-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-sky-400); 
+    --bos-color-container-dark: var(--color-sky-900); 
+    --bos-color-container-variant: var(--color-sky-500); 
+    --bos-color-container-variant-dark: var(--color-sky-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-sky-950);
+    --bos-color-on-surface-variant: var(--color-sky-900);
+    --bos-color-on-surface-dark: var(--color-sky-300);
+    --bos-color-on-surface-dark-variant: var(--color-sky-400);
+
+    --bos-color-on-container: var(--color-sky-950);
+    --bos-color-on-container-variant: var(--color-sky-800);
+    --bos-color-on-container-dark: var(--color-sky-300);
+    --bos-color-on-container-variant-dark: var(--color-sky-500);
+    --bos-color-on-container-overlay: var(--color-sky-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-sky-950);
+    --bos-color-on-surface-variant: var(--color-sky-800);
+    --bos-color-on-surface-primary-color: var(--color-sky-900);
+    --bos-color-surface-dark: var(--color-sky-900);
+    --bos-color-on-surface-dark: var(--color-sky-100);
+    --bos-color-container: var(--color-sky-300);
+    --bos-color-on-container: var(--color-sky-950);
+    --bos-color-on-container-variant: var(--color-sky-700);
+    --bos-color-container-dark: var(--color-sky-700);
+    --bos-color-on-container-dark: var(--color-sky-100);
+    --bos-color-on-container-dark-variant: var(--color-sky-300);
+    --bos-color-primary: var(--color-sky-900);
+    --bos-color-primary-container: var(--color-sky-900);
+    --bos-color-on-primary-container: var(--color-sky-100);
+    --bos-color-primary-container-dark: var(--color-sky-800);
+    --bos-color-on-primary-container-variant: var(--color-sky-400);
+    */
+  }
+
+  [data-theme='teal'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-teal-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-teal-900);
+    --bos-color-primary-dark: var(--color-teal-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-teal-400); 
+    --bos-color-container-dark: var(--color-teal-900); 
+    --bos-color-container-variant: var(--color-teal-500); 
+    --bos-color-container-variant-dark: var(--color-teal-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-teal-950);
+    --bos-color-on-surface-variant: var(--color-teal-900);
+    --bos-color-on-surface-dark: var(--color-teal-300);
+    --bos-color-on-surface-dark-variant: var(--color-teal-400);
+
+    --bos-color-on-container: var(--color-teal-950);
+    --bos-color-on-container-variant: var(--color-teal-800);
+    --bos-color-on-container-dark: var(--color-teal-300);
+    --bos-color-on-container-variant-dark: var(--color-teal-500);
+    --bos-color-on-container-overlay: var(--color-teal-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-teal-950);
+    --bos-color-on-surface-variant: var(--color-teal-800);
+    --bos-color-on-surface-primary-color: var(--color-teal-900);
+    --bos-color-surface-dark: var(--color-teal-900);
+    --bos-color-on-surface-dark: var(--color-teal-100);
+    --bos-color-container: var(--color-teal-300);
+    --bos-color-on-container: var(--color-teal-950);
+    --bos-color-on-container-variant: var(--color-teal-700);
+    --bos-color-container-dark: var(--color-teal-700);
+    --bos-color-on-container-dark: var(--color-teal-100);
+    --bos-color-on-container-dark-variant: var(--color-teal-300);
+    --bos-color-primary: var(--color-teal-900);
+    --bos-color-primary-container: var(--color-teal-900);
+    --bos-color-on-primary-container: var(--color-teal-100);
+    --bos-color-primary-container-dark: var(--color-teal-800);
+    --bos-color-on-primary-container-variant: var(--color-teal-400);
+    */
+  }
+
+  [data-theme='violet'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-violet-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-violet-900);
+    --bos-color-primary-dark: var(--color-violet-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-violet-400); 
+    --bos-color-container-dark: var(--color-violet-900); 
+    --bos-color-container-variant: var(--color-violet-500); 
+    --bos-color-container-variant-dark: var(--color-violet-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-violet-950);
+    --bos-color-on-surface-variant: var(--color-violet-900);
+    --bos-color-on-surface-dark: var(--color-violet-300);
+    --bos-color-on-surface-dark-variant: var(--color-violet-400);
+
+    --bos-color-on-container: var(--color-violet-950);
+    --bos-color-on-container-variant: var(--color-violet-800);
+    --bos-color-on-container-dark: var(--color-violet-300);
+    --bos-color-on-container-variant-dark: var(--color-violet-500);
+    --bos-color-on-container-overlay: var(--color-violet-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-violet-950);
+    --bos-color-on-surface-variant: var(--color-violet-800);
+    --bos-color-on-surface-primary-color: var(--color-violet-900);
+    --bos-color-surface-dark: var(--color-violet-900);
+    --bos-color-on-surface-dark: var(--color-violet-100);
+    --bos-color-container: var(--color-violet-300);
+    --bos-color-on-container: var(--color-violet-950);
+    --bos-color-on-container-variant: var(--color-violet-700);
+    --bos-color-container-dark: var(--color-violet-700);
+    --bos-color-on-container-dark: var(--color-violet-100);
+    --bos-color-on-container-dark-variant: var(--color-violet-300);
+    --bos-color-primary: var(--color-violet-900);
+    --bos-color-primary-container: var(--color-violet-900);
+    --bos-color-on-primary-container: var(--color-violet-100);
+    --bos-color-primary-container-dark: var(--color-violet-800);
+    --bos-color-on-primary-container-variant: var(--color-violet-400);
+    */
+  }
+
+  [data-theme='yellow'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-yellow-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-yellow-900);
+    --bos-color-primary-dark: var(--color-yellow-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-yellow-400); 
+    --bos-color-container-dark: var(--color-yellow-900); 
+    --bos-color-container-variant: var(--color-yellow-500); 
+    --bos-color-container-variant-dark: var(--color-yellow-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-yellow-950);
+    --bos-color-on-surface-variant: var(--color-yellow-900);
+    --bos-color-on-surface-dark: var(--color-yellow-300);
+    --bos-color-on-surface-dark-variant: var(--color-yellow-400);
+
+    --bos-color-on-container: var(--color-yellow-950);
+    --bos-color-on-container-variant: var(--color-yellow-800);
+    --bos-color-on-container-dark: var(--color-yellow-300);
+    --bos-color-on-container-variant-dark: var(--color-yellow-500);
+    --bos-color-on-container-overlay: var(--color-yellow-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-yellow-950);
+    --bos-color-on-surface-variant: var(--color-yellow-800);
+    --bos-color-on-surface-primary-color: var(--color-yellow-900);
+    --bos-color-surface-dark: var(--color-yellow-900);
+    --bos-color-on-surface-dark: var(--color-yellow-100);
+    --bos-color-container: var(--color-yellow-300);
+    --bos-color-on-container: var(--color-yellow-950);
+    --bos-color-on-container-variant: var(--color-yellow-700);
+    --bos-color-container-dark: var(--color-yellow-700);
+    --bos-color-on-container-dark: var(--color-yellow-100);
+    --bos-color-on-container-dark-variant: var(--color-yellow-300);
+    --bos-color-primary: var(--color-yellow-900);
+    --bos-color-primary-container: var(--color-yellow-900);
+    --bos-color-on-primary-container: var(--color-yellow-100);
+    --bos-color-primary-container-dark: var(--color-yellow-800);
+    --bos-color-on-primary-container-variant: var(--color-yellow-400);
+    */
+  }
+
+  [data-theme='zinc'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-zinc-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-zinc-900);
+    --bos-color-primary-dark: var(--color-zinc-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-zinc-400); 
+    --bos-color-container-dark: var(--color-zinc-900); 
+    --bos-color-container-variant: var(--color-zinc-500); 
+    --bos-color-container-variant-dark: var(--color-zinc-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-zinc-950);
+    --bos-color-on-surface-variant: var(--color-zinc-900);
+    --bos-color-on-surface-dark: var(--color-zinc-300);
+    --bos-color-on-surface-dark-variant: var(--color-zinc-400);
+
+    --bos-color-on-container: var(--color-zinc-950);
+    --bos-color-on-container-variant: var(--color-zinc-800);
+    --bos-color-on-container-dark: var(--color-zinc-300);
+    --bos-color-on-container-variant-dark: var(--color-zinc-500);
+    --bos-color-on-container-overlay: var(--color-zinc-100);
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-zinc-950);
+    --bos-color-on-surface-variant: var(--color-zinc-800);
+    --bos-color-on-surface-primary-color: var(--color-zinc-900);
+    --bos-color-surface-dark: var(--color-zinc-900);
+    --bos-color-on-surface-dark: var(--color-zinc-100);
+    --bos-color-container: var(--color-zinc-300);
+    --bos-color-on-container: var(--color-zinc-950);
+    --bos-color-on-container-variant: var(--color-zinc-700);
+    --bos-color-container-dark: var(--color-zinc-700);
+    --bos-color-on-container-dark: var(--color-zinc-100);
+    --bos-color-on-container-dark-variant: var(--color-zinc-300);
+    --bos-color-primary: var(--color-zinc-900);
+    --bos-color-primary-container: var(--color-zinc-900);
+    --bos-color-on-primary-container: var(--color-zinc-100);
+    --bos-color-primary-container-dark: var(--color-zinc-800);
+    --bos-color-on-primary-container-variant: var(--color-zinc-400);
+    */
+  }
+
+/* Surface –Backgrounds and large, low-emphasis areas of the screen.
+Primary, Secondary, Tertiary – Accent colors used to emphasize or de-emphasize foreground elements.
+Container – Fill colors for foreground elements like buttons. They should not be used for text or icons.
+On – Color for text or icons on top of its paired parent color. For example, on primary is used for text and icons against the primary fill color.
+Variant – Roles ending with this term offer a lower emphasis alternative to its non-variant pair. For example, outline variant is a less emphasized version of the outline color.
+
+Surface – Default color for backgrounds
+On surface – Text and icons against any surface color
+On surface variant – Lower-emphasis color for text and icons against any surface color
+
+There are two outline colors to be used against surface:
+Outline – Important boundaries, such as a text field outline
+Outline variant – Decorative elements, such as dividers
+Should add more surface container roles. Also, add colors for surface dark.
+
+Surface – A role used for backgrounds and large, low-emphasis areas of the screen.
+Primary, Secondary, Tertiary – Accent color roles used to emphasize or de-emphasize foreground elements.
+Container – Roles used as a fill color for foreground elements like buttons. 
+      They should not be used for text or icons.
+On – Roles starting with this term indicate a color for text or icons on top of its paired parent color. 
+      For example, on primary is used for text and icons against the primary fill color.
+Variant – Roles ending with this term offer a lower emphasis alternative to its non-variant pair. 
+      For example, outline variant is a less emphasized version of the outline color.
+
+
+See https://m3.material.io/styles/color/roles#1950f337-a1cb-4ebf-9d84-e0643d99c578
+*/
+
+  [data-theme='nickels'] {
+    /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-gray-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-barberry-800);
+    --bos-color-primary-dark: var(--color-barberry-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+/*    --bos-color-container: var(--color-barberry-500); 
+*/    
+    --bos-color-container: var(--color-barberry-600); 
+
+    --bos-color-container-dark: var(--color-barberry-900); 
+/*    --bos-color-container-variant: var(--color-barberry-500); 
+*/    --bos-color-container-variant: var(--color-barberry-600); 
+    --bos-color-container-variant-dark: var(--color-barberry-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-barberry-950);
+    --bos-color-on-surface-variant: var(--color-barberry-900);
+    --bos-color-on-surface-dark: var(--color-barberry-400);
+    --bos-color-on-surface-dark-variant: var(--color-barberry-400);
+
+    --bos-color-on-container: var(--color-barberry-950);
+    --bos-color-on-container-variant: var(--color-barberry-800);
+    --bos-color-on-container-dark: var(--color-barberry-400);
+    --bos-color-on-container-variant-dark: var(--color-barberry-500);
+    --bos-color-on-container-overlay: var(--color-barberry-100);
+    --bos-header-overlay: var(--color-burgundy-300);
+  }
+
+  [data-theme='spartan'] {
+    /*
+    Spartan HSL: H348.17 S95.95 L29.02
+    HEX: 91031f
+    https://uicolors.app/generate/91031f
+    Border: #ff8ea4
+    Surface: #ffffff
+
+    */
+
+        /*Surface Roles:
+    Used for backgrounds and large, low-emphasis areas of the screen.*/
+    --bos-color-surface: var(--color-white);
+    --bos-color-surface-dark: var(--bg-gray-900);
+
+    /*Primary Roles:display: 
+    Used to emphasize or de-emphasize foreground elements*/
+    --bos-color-primary: var(--color-burgundy-900);
+    --bos-color-primary-dark: var(--color-burgundy-100);
+
+    /*Container Roles:display:
+    Fill color for foreground elements like buttons. */
+    --bos-color-container: var(--color-burgundy-400); 
+    --bos-color-container-dark: var(--color-burgundy-900); 
+    --bos-color-container-variant: var(--color-burgundy-500); 
+    --bos-color-container-variant-dark: var(--color-burgundy-700); 
+
+    /*On Roles: 
+    Roles starting with this term indicate a color for text or icons on top of its paired parent color*/
+    --bos-color-on-surface: var(--color-burgundy-950);
+    --bos-color-on-surface-variant: var(--color-burgundy-900);
+    --bos-color-on-surface-dark: var(--color-burgundy-300);
+    --bos-color-on-surface-dark-variant: var(--color-burgundy-400);
+
+    --bos-color-on-container: var(--color-burgundy-950);
+    --bos-color-on-container-variant: var(--color-burgundy-800);
+    --bos-color-on-container-dark: var(--color-burgundy-300);
+    --bos-color-on-container-variant-dark: var(--color-burgundy-500);
+    --bos-color-on-container-overlay: var(--color-burgundy-100);
+
+    /*
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-burgundy-950);
+    --bos-color-on-surface-variant: var(--color-burgundy-800);
+    --bos-color-on-surface-primary-color: var(--color-burgundy-900);
+    --bos-color-surface-dark: var(--color-burgundy-900);
+    --bos-color-on-surface-dark: var(--color-burgundy-100);
+    --bos-color-container: var(--color-burgundy-300);
+    --bos-color-on-container: var(--color-burgundy-950);
+    --bos-color-on-container-variant: var(--color-burgundy-700);
+    --bos-color-container-dark: var(--color-burgundy-700);
+    --bos-color-on-container-dark: var(--color-burgundy-100);
+    --bos-color-on-container-dark-variant: var(--color-burgundy-300);
+    --bos-color-primary: var(--color-burgundy-900);
+    --bos-color-primary-container: var(--color-burgundy-900);
+    --bos-color-on-primary-container: var(--color-burgundy-100);
+    --bos-color-primary-container-dark: var(--color-burgundy-800);
+    --bos-color-on-primary-container-variant: var(--color-burgundy-400);
+    --bos-color-menu-bg: var(--color-white);
+    --bos-text-on-surface: var(--color-burgundy-950);
+    --bos-text-on-surface-lighter: var(--color-burgundy-900);
+    --bos-text-on-container: var(--color-burgundy-950);
+    --bos-text-on-container-lighter: var(--color-burgundy-900);
+    --bos-header-overlay: var(--color-burgundy-300);
+    --bos-text-on-header-overlay: var(--color-burgundy-950);
+  */
+  }
+
+  [data-theme='default'] {
+    --bos-color-surface: var(--color-white);
+    --bos-color-on-surface: var(--color-indigo-950);
+    --bos-color-on-surface-variant: var(--color-indigo-800);
+    --bos-color-on-surface-primary-color: var(--color-indigo-900);
+    --bos-color-surface-dark: var(--color-indigo-900);
+    --bos-color-on-surface-dark: var(--color-indigo-100);
+    --bos-color-container: var(--color-indigo-300);
+    --bos-color-on-container: var(--color-indigo-950);
+    --bos-color-on-container-variant: var(--color-indigo-700);
+    --bos-color-container-dark: var(--color-indigo-700);
+    --bos-color-on-container-dark: var(--color-indigo-100);
+    --bos-color-on-container-dark-variant: var(--color-indigo-300);
+    --bos-color-primary: var(--color-indigo-900);
+    --bos-color-primary-container: var(--color-indigo-900);
+    --bos-color-on-primary-container: var(--color-indigo-100);
+    --bos-color-primary-container-dark: var(--color-indigo-800);
+    --bos-color-on-primary-container-variant: var(--color-indigo-400);
+    --bos-color-menu-bg: var(--color-white);
+    --bos-text-on-surface: var(--color-indigo-950);
+    --bos-text-on-surface-lighter: var(--color-indigo-900);
+    --bos-text-on-container: var(--color-indigo-950);
+    --bos-text-on-container-lighter: var(--color-indigo-900);
+    --bos-header-overlay: var(--color-indigo-300);
+    --bos-text-on-header-overlay: var(--color-indigo-950);
+  }
+
+  [data-theme='candy'] {
+    --color-primary: #f9a8d4;
+    --color-secondary: #56d0a0;
+    --headline-primary-color: var(--color-amber-700);
+    --headline-secondary-color: var(--color-amber-500);
+    --headline-tertiary-color: var(--color-amber-400);
+
+  }
+}
+
+.bos-section {
+    @apply mx-auto max-w-7xl pt-16 pb-16;
+}
+
+.bos-footer-logo {
+  @apply h-12;
+}
+
+.bos-section-inline-form {
+  @apply mx-auto max-w-7xl px-6 pt-6 pb-4;
+}
+  
+.bos-section-tailwindui-orig {
+    @apply mx-auto max-w-7xl px-6 pb-24 pt-6 sm:pt-6 lg:px-8 lg:pt-24;
+}
+
+.bos-hero-tailwindui-with-image-tiles {
+    @apply aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg;
+}
+
+.accordion {
+  border: 1px solid #ccc;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+  width: 100%;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordion-icon {
+  width: 0.78em;
+  height: 0.78em;
+  transform: rotate(-90deg);
+  transition: transform 0.2s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.accordion.active .accordion-icon {
+  transform: rotate(0deg);
+}
+
+.accordion.active .accordion-content {
+  max-height: max-content;
+}

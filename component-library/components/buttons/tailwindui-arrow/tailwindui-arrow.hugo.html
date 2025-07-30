@@ -1,0 +1,23 @@
+{{ $horizontal_padding := "px-3.5" }}
+{{ $vertical_padding := "py-2.5" }}
+
+{{ with .button_horizontal_padding }}
+  {{ $horizontal_padding = . }}
+{{ end }}
+
+{{ with .button_vertical_padding }}
+  {{ $vertical_padding = . }}
+{{ end }}
+
+<a 
+  class="{{ $horizontal_padding }} {{ $vertical_padding }} text-sm/6 font-semibold 
+  text-({{ .text_color }}) 
+  hover:text-({{ .hover }})" 
+  href="{{ .button_link }}"
+  {{ with .button_aria_label }}
+    aria-label="{{ . }}"
+  {{ end }}
+  >
+    {{ .button_text }}
+    <span aria-hidden="true">→</span>
+</a>

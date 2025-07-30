@@ -1,0 +1,52 @@
+<section>
+    <div class="c-feature-tailwindui-with-product-screenshot bos-section-tailwindui-orig overflow-hidden bg-({{ .background_color }}) dark:bg-({{ .background_color_dark }})">
+        <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+                <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+                    <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">               
+                        <h2 class="text-base/7 font-semibold text-(--bos-color-on-surface-variant)">
+                            {{ .announcement.announcement_text}}
+                        </h2>
+                        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-(--bos-color-on-surface) dark:text-(--bos-color-on-surface-dark) sm:text-5xl">
+                            {{ .heading.heading_text }}
+                        </p>
+                        <p class="mt-6 text-lg/8 text-(--bos-color-on-surface)">
+                            {{ .subheading.subheading_text }} 
+                        </p>
+                        <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-(--bos-color-on-surface) lg:max-w-none">
+                        {{ $feature_text_color := .features_text_color }}
+                        {{ $feature_text_color_dark := .features_text_color_dark }}
+                        {{ range .features.feature_details }}
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-({{ $feature_text_color }}) dark:text-({{ $feature_text_color }})">
+                                    <div class="absolute left-1 top-1 size-5 mb-6  flex items-center justify-center rounded-lg  ">
+                                        <i class="{{ .icon }}"></i>
+                                    </div>
+                                    {{ .title }}
+                                </dt>
+                                <dd class="inline">
+                                    {{ .description }}
+                                </dd>
+                            </div>
+                        {{ end }}
+                        </dl>
+                    </div>
+                </div>
+                <div class="sm:px-6 lg:px-0">
+                    <!-- ORIG DIV with padded image
+                    <div class="relative isolate overflow-hidden px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
+                    -->
+                    <div class="relative isolate overflow-hidden ">
+                        <div class="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-indigo-100 opacity-20 ring-1 ring-inset ring-white" aria-hidden="true">
+                        </div>
+                        <div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
+                            <img src="{{ .feature_image.image_path }}" alt="{{ .feature_image.image_alt }}" width="2432" height="1442" class="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-({{ .background_color }}) dark:bg-({{ .background_color_dark }}) ring-1 ring-white/10">
+                        </div>
+                        <div class="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 sm:rounded-3xl" aria-hidden="true">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,61 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "CTA - Content with Image Tiles"
+  description: CTA block is useful for things like jobs and about sections.
+  icon: app_registration
+  tags:
+    - Call-to-Action
+    - Images
+    - Buttons
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+    background_color: '--bos-color-surface'
+    background_color_dark: '--bos-color-surface-dark'
+    announcement:
+      announcement_text: Our people
+      text_color: '--bos-color-on-surface-variant'
+      text_color_dark: '--bos-color-on-surface-variant-dark'
+    heading:
+      heading_text: Our team is renowned for their focus on delivering superior customer support. When questions or problems arise, they answer the phone and ensure our customers are able to get their jobs done.
+      text_color: '--bos-color-on-surface'
+      text_color_dark: '--bos-color-on-surface-dark'
+    subheading:
+      subheading_text: We believe that working with our customers to identify the best solution to problems makes our software better -- and benefits all of our customers. It's a network effect of freight broker knowledge. Give us a good idea, and we will implement it -- to the benefit of all our customers.
+      text_color: '--bos-color-on-surface'
+      text_color_dark: '--bos-color-on-surface-dark'
+    tile_images:
+      image_1:
+        image_path: /images/bos-defaults/cta/women-on-couch.jpg
+        alt_text: Two women talking while sitting on a couch.
+      image_2:
+        image_path: /images/bos-defaults/cta/team-on-beach.jpg
+        alt_text: Team members relaxing on the beach.
+      image_3:
+        image_path: /images/bos-defaults/cta/team-in-conference-room.jpg
+        alt_text: Team members meeting in a conference room.
+      image_4:
+        image_path: /images/bos-defaults/cta/team-playing-volleyball.jpg
+        alt_text: Team members playing volleyball on the beach.
+    enable_button: true
+    buttons:
+      - _bookshop_name: buttons/tailwindui-primary
+        button_text: Join our team
+        button_link: /contact
+        button_aria_label: Join our team button.
+        background_color: '--bos-color-on-container'
+        hover_brightness: 0.85
+        text_color: '--bos-color-on-surface-dark'
+        background_color_dark: '--bos-color-on-container-dark'
+        hover: '--bos-color-container-variant-dark'
+        hover_dark: '--bos-color-container-variant'
+        text_color_dark: '--bos-color-on-surface'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

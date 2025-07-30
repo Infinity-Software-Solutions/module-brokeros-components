@@ -1,0 +1,17 @@
+{
+  "name": "module-brokeros-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@bookshop/browser": "3.16.3",
+    "@bookshop/generate": "3.16.3",
+    "@bookshop/hugo-engine": "3.16.3"
+  }
+}

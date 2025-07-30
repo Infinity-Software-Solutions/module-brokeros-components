@@ -1,0 +1,324 @@
+canada:
+   - state:
+     name: Alberta
+     abbreviation: AB
+   - state:
+     name: British Columbia
+     abbreviation: BC
+   - state:
+     name: Manitoba
+     abbreviation: MB
+   - state:
+     name: New Brunswick
+     abbreviation: NB
+   - state:
+     name: Newfoundland and Labrador
+     abbreviation: NL
+   - state:
+     name: Nova Scotia
+     abbreviation: NS
+   - state:
+     name: Ontario
+     abbreviation: ON
+   - state:
+     name: Prince Edward Island
+     abbreviation: PE
+   - state:
+     name: Quebec
+     abbreviation: QC
+   - state:
+     name: Saskatchewan
+     abbreviation: SK
+mexico:
+   - state: 
+     name: Aguascalientes
+     abbreviation: Ags.
+   - state:
+     name: Baja California
+     abbreviation: B.C.
+   - state: 
+     name: Baja California Sur
+     abbreviation: B.C.S.
+   - state:
+     name: Campeche
+     abbreviation: Camp.
+   - state:
+     name: Chiapas
+     abbreviation: Chis.
+   - state:
+     name: Chihuahua
+     abbreviation: Chih.
+   - state:
+     name: Coahuila
+     abbreviation: Coah.
+   - state:
+     name: Colima
+     abbreviation: Col.
+   - state:
+     name: Mexico City
+     abbreviation: CDMX
+   - state:
+     name: Durango
+     abbreviation: Dgo.
+   - state:
+     name: Guanajuato
+     abbreviation: Gto.
+   - state:
+     name: Guerrero
+     abbreviation: Gro.
+   - state:
+     name: Hidalgo
+     abbreviation: Hgo.
+   - state:
+     name: Jalisco
+     abbreviation: Jal.
+   - state:
+     name: México
+     abbreviation: Edomex.
+   - state:
+     name: Michoacán
+     abbreviation: Mich.
+   - state:
+     name: Morelos
+     abbreviation: Mor.
+   - state:
+     name: Nayarit
+     abbreviation: Nay.
+   - state:
+     name: Nuevo León
+     abbreviation: N.L.
+   - state:
+     name: Oaxaca
+     abbreviation: Oax.
+   - state:
+     name: Puebla
+     abbreviation: Pue. 
+   - state:
+     name: Querétaro
+     abbreviation: Qro.
+   - state:
+     name: Quintana Roo
+     abbreviation: Q. Roo.
+   - state:
+     name: San Luis Potosí
+     abbreviation: S.L.P.
+   - state:
+     name: Sinaloa
+     abbreviation: Sin.
+   - state:
+     name: Sonora
+     abbreviation: Son. 
+   - state:
+     name: Tabasco
+     abbreviation: Tab.
+   - state:
+     name: Tamaulipas
+     abbreviation: Tamps.
+   - state:
+     name: Tlaxcala
+     abbreviation: Tlax.
+   - state:
+     name: Veracruz
+     abbreviation: Ver.
+   - state:
+     name: Yucatán
+     abbreviation: Yuc.
+   - state:
+     name: Zacatecas
+     abbreviation: Zac.
+united_states:
+   - state:
+     name: Alaska
+     abbreviation: AK
+   - state:
+     name: Alabama
+     abbreviation: AL
+   - state:
+     name: American Samoa
+     abbreviation: AS
+   - state:
+     name: Arizona
+     abbreviation: AZ
+   - state:
+     name: Arkansas
+     abbreviation: AR
+   - state:
+     name: California
+     abbreviation: CA
+   - state:
+     name: Colorado
+     abbreviation: CO
+   - state:
+     name: Connecticut
+     abbreviation: CT
+   - state:
+     name: Delaware
+     abbreviation: DE
+   - state:
+     name: District of Columbia
+     abbreviation: DC
+   - state:
+     name: Federated States of Micronesia
+     abbreviation: FM
+   - state:
+     name: Florida
+     abbreviation: FL
+   - state:
+     name: Georgia
+     abbreviation: GA
+   - state:
+     name: Guam
+     abbreviation: GU
+   - state:
+     name: Hawaii
+     abbreviation: HI
+   - state:
+     name: Idaho
+     abbreviation: ID
+   - state:
+     name: Illinois
+     abbreviation: IL
+   - state:
+     name: Indiana
+     abbreviation: IN
+   - state:
+     name: Iowa
+     abbreviation: IA
+   - state:
+     name: Kansas
+     abbreviation: KS
+   - state:
+     name: Kentucky
+     abbreviation: KY
+   - state:
+     name: Louisiana
+     abbreviation: LA
+   - state:
+     name: Maine
+     abbreviation: ME
+   - state:
+     name: Marshall Islands
+     abbreviation: MH
+   - state:
+     name: Maryland
+     abbreviation: MD
+   - state:
+     name: Massachusetts
+     abbreviation: MA
+   - state:
+     name: Michigan
+     abbreviation: MI
+   - state:
+     name: Minnesota
+     abbreviation: MN
+   - state:
+     name: Mississippi
+     abbreviation: MS
+   - state:
+     name: Missouri
+     abbreviation: MO
+   - state:
+     name: Montana
+     abbreviation: MT
+   - state:
+     name: Nebraska
+     abbreviation: NE
+   - state:
+     name: Nevada
+     abbreviation: NV
+   - state:
+     name: New Hampshire
+     abbreviation: NH
+   - state:
+     name: New Jersey
+     abbreviation: NJ
+   - state:
+     name: New Mexico
+     abbreviation: NM
+   - state:
+     name: New York
+     abbreviation: NY
+   - state:
+     name: North Carolina
+     abbreviation: NC
+   - state:
+     name: North Dakota
+     abbreviation: ND
+   - state:
+     name: Northern Mariana Islands
+     abbreviation: MP
+   - state:
+     name: Ohio
+     abbreviation: OH
+   - state:
+     name: Oklahoma
+     abbreviation: OK
+   - state:
+     name: Oregon
+     abbreviation: OR
+   - state:
+     name: Palau
+     abbreviation: PW
+   - state:
+     name: Pennsylvania
+     abbreviation: PA
+   - state:
+     name: Puerto Rico
+     abbreviation: PR
+   - state:
+     name: Rhode Island
+     abbreviation: RI
+   - state:
+     name: South Carolina
+     abbreviation: SC
+   - state:
+     name: South Dakota
+     abbreviation: SD
+   - state:
+     name: Tennessee
+     abbreviation: TN
+   - state:
+     name: Texas
+     abbreviation: TX
+   - state:
+     name: Utah
+     abbreviation: UT
+   - state:
+     name: Vermont
+     abbreviation: VT
+   - state:
+     name: Virgin Islands
+     abbreviation: VI
+   - state:
+     name: Virginia
+     abbreviation: VA
+   - state:
+     name: Washington
+     abbreviation: WA
+   - state:
+     name: West Virginia
+     abbreviation: WV
+   - state:
+     name: Wisconsin
+     abbreviation: WI
+   - state:
+     name: Wyoming
+     abbreviation: WY
+   - state:
+     name: Armed Forces Africa
+     abbreviation: AE
+   - state:
+     name: Armed Forces Americas (except Canada)
+     abbreviation: AA
+   - state:
+     name: Armed Forces Canada
+     abbreviation: AE
+   - state:
+     name: Armed Forces Europe
+     abbreviation: AE
+   - state:
+     name: Armed Forces Middle East
+     abbreviation: AE
+   - state:
+     name: Armed Forces Pacific
+     abbreviation: AP

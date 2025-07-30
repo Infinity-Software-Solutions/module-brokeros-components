@@ -1,0 +1,5 @@
+#See https://gohugo.io/configuration/media-types/
+
+########################### Media types ###########################
+["application/manifest+json"]
+suffixes = ["webmanifest"]

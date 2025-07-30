@@ -1,0 +1,71 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Testimonials Grid"
+  description: Simple grid of testimonials with quote, title, company, and image.
+  icon: "cottage"
+  tags: 
+    - Testimonials
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_color: '--bos-color-surface'
+  background_color_dark: '--bos-color-surface-variant'
+  background_gradient:
+    from_color: '--bos-color-primary'
+    to_color: '--bos-color-container'
+  heading:
+    heading_text: Our customers love us.
+    text_color: '--bos-color-on-container'
+    text_color_dark: '--bos-color-on-container-dark'
+  subheading:
+    subheading_text: Trusted by shippers worldwide.
+    text_color: '--bos-color-on-container'
+    text_color_dark: '--bos-color-on-container-dark'
+  testimonial_text_color: '--bos-color-on-surface'
+  testimonial_text_color_dark: '--bos-color-on-surface-dark'
+  testimonials:
+    - name: Ronda Reed
+      image: 
+      title: Logistics Manager
+      company: GoBob Pipe & Steel
+      quote: I have been working with Nickels Brokerage for 10+ years. They are dependable, honest, professional, caring, and extremely hard working. Dan works very hard finding the right drivers / rates for our needs and our customers. They take care of about 99% of ALL of our full loads, partial loads and hotshot loads. I will continue to work with Nickels Brokerage as long as I am in logistics.
+      logo:
+      featured: true
+      background_color: '--bos-color-surface'
+      background_color_dark: '--bos-color-surface_dark'
+    - name: Randy Keith
+      image: 
+      title:
+      company: 
+      quote: Used them to move a load of floating dock pavers to NC and was fair rate. Delivery was on time and the driver notified us before arrival. Everything worked out well.
+      logo:
+      featured: 
+      background_color: '--bos-color-surface'
+      background_color_dark: '--bos-color-surface_dark'
+    - name: Filipp Timoshenko
+      image: 
+      title: Owner
+      company: Advanced Transportation LLC
+      quote: I own Advanced Transportation LLC and working with Nickels was a smooth and easy experience. One of the few brokers out there who actually tries to work with the truckers.
+      logo:
+      featured: 
+      background_color: '--bos-color-surface'
+      background_color_dark: '--bos-color-surface_dark'
+    - name: Joe Arion
+      image: 
+      title: 
+      company:
+      quote: Great experience with this outfit. Dan communicated well about the delivery status and Dave (the guy who was delivering the shipment) gave us updates on a regular basis.
+      logo:
+      featured: 
+      background_color: '--bos-color-surface'
+      background_color_dark: '--bos-color-surface_dark'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

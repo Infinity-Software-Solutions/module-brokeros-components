@@ -1,0 +1,55 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Feature - Service with Image and Icons"
+  description: List services you provide along with a large image.
+  icon: truck
+  tags: 
+    - Features
+    - Products
+    - Services
+    - Content
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_color: '--bos-color-container'
+  background_color_dark: '--bos-color-container'
+  announcement:
+    announcement_text: Yep. We handle that.
+    text_color: '--bos-color-on-surface-variant'
+    text_color_dark: '--bos-color-on-surface-variant-dark'
+  heading:
+    heading_text: Optimizing Supply Chains
+    text_color: '--bos-color-on-surface-variant'
+    text_color_dark: '--bos-color-on-surface-variant-dark'
+  subheading:
+    subheading_text: We are built from the ground up to deliver on your cross-border, full truckload, partial truckload, and warehousing needs.
+    text_color: '--bos-color-on-surface-variant'
+    text_color_dark: '--bos-color-on-surface-dark'
+  feature_image:
+    image_path: /images/bos-defaults/features/american-map-with-dots.webp
+    image_alt: 
+  features:
+    text_color: '--bos-color-on-surface-variant'
+    text_color_dark: '--bos-color-on-surface-variant-dark'
+    feature_details:
+    - feature:
+      title: Cross-Border
+      icon: fas fa-truck
+      description: Move your next shipment with confidence. From flatbed to dry-van, we have you covered.
+    - feature:
+      title: International
+      icon: fas fa-truck
+      description: Take the stress out of international shipments. We know how to get things from there to here.
+    - feature:
+      title: Drayage
+      icon: fas fa-truck
+      description: There's a reason that most companies don't handle drayage. It's hard -- and it's even harder to do well. We know the ins and outs.
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

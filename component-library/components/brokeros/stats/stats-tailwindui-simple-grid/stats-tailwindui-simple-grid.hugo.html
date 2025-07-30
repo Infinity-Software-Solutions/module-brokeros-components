@@ -1,0 +1,24 @@
+<section>
+    <div class="bg-({{ .background_color }}) dark:bg-({{ .background_color_dark }}) py-12 sm:py-12">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:max-w-none">
+            <div class="text-center">
+                <h2 class="text-4xl font-semibold tracking-tight text-balance text-({{ .heading.text_color }}) dark:text-({{ .heading.text_color_dark }}) sm:text-5xl">
+                    {{ .heading.heading_text }}
+                </h2>
+                <p class="mt-4 text-lg/8 text-({{ .subheading.text_color }}) dark:text-({{ .subheading.text_color_dark }})">
+                    {{ .subheading.subheading_text }}
+                </p>
+            </div>
+            <dl class="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+                {{ range .statistics }}
+                    <div class="flex flex-col bg-({{ .background_color }})/5 dark:bg-({{ .background_color_dark }})  p-8">
+                        <dt class="text-sm/6 font-semibold text-{{ .text_color }} dark:text-{{ .text_color_dark }}">{{ .metric }}</dt>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-{{ .text_color }} dark:text-{{ .text_color_dark }}">{{ .number }}</dd>
+                    </div>
+                {{ end }}
+            </dl>
+            </div>
+        </div>
+    </div>
+</section>

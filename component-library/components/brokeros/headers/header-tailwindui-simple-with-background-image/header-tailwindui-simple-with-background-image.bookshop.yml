@@ -1,0 +1,36 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Simple Page Header with Background Image"
+  description: Heading, text & background.
+  icon: "cottage"
+  tags:
+    - Heading
+    - Text
+    - Image
+    - Buttons
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_color: '--bos-color-primary'
+  background_color_dark: '--bos-color-primary-dark'
+  background_image:
+    image_path: /images/bos-defaults/heroes/truck-on-bridge-2160w-1440h.png
+    alt_text: >-
+      A photograph of a semi truck driving over a bridge.
+  heading:
+    heading_text: Get ready to see what excellence in logistics looks like.
+    text_color: '--bos-color-on-surface-dark'
+    text_color_dark: '--bos-color-on-surface-dark'
+  subheading:
+    subheading_text: We serve the world's most demanding shippers.
+    text_color: '--bos-color-on-surface-dark'
+    text_color_dark: '--bos-color-on-surface-dark'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

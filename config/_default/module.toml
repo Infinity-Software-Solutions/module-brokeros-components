@@ -1,0 +1,22 @@
+#See https://gohugo.io/configuration/module/
+
+replacements = 'local/component-library -> ../component-library'
+
+[[imports]]
+path = "local/component-library"
+
+[[imports]]
+path = "github.com/cloudcannon/bookshop/hugo/v3"
+
+[[mounts]]
+source = 'assets'
+target = 'assets'
+
+[[mounts]]
+source = 'static'
+target = 'assets'
+
+[[mounts]]
+disableWatch = true
+source = 'hugo_stats.json'
+target = 'assets/notwatching/hugo_stats.json'

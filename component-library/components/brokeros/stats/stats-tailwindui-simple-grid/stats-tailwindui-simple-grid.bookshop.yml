@@ -1,0 +1,56 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Stats - Simple Grid"
+  description: Add 4 statistics on a size-based grid
+  icon: Chart-bar
+  tags: 
+    - Heading
+    - Text
+    - Metrics
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_color: '--bos-color-container-variant'
+  background_color_dark: '--bos-color-container-variant'
+  heading:
+    heading_text: Trusted by shippers worldwide.
+    text_color: '--bos-color-on-container'
+    text_color_dark: '--bos-color-on-container-dark'
+  subheading:
+    subheading_text: The best shippers demand the best logistics provider.
+    text_color: '--bos-color-on-container'
+    text_color_dark: '--bos-color-on-container-dark'
+  statistics:
+      - number: '50+'
+        metric: Logistics Professionals
+        text_color: '--bos-color-on-surface'
+        text_color_dark: '--bos-color-on-surface_dark'
+        background_color: '--bos-color-on-container'
+        background_color_dark: '--bos-color-on-container_dark'
+      - number: '10'
+        metric:  Years in Business
+        text_color: '--bos-color-on-surface'
+        text_color_dark: '--bos-color-on-surface_dark'
+        background_color: '--bos-color-on-container'
+        background_color_dark: '--bos-color-on-container_dark'
+      - number: '3,000'
+        metric: Carriers in Our Network
+        text_color: '--bos-color-on-surface'
+        text_color_dark: '--bos-color-on-surface_dark'
+        background_color: '--bos-color-on-container'
+        background_color_dark: '--bos-color-on-container_dark'
+      - number: '42K+'
+        metric: Loads per Year
+        text_color: '--bos-color-on-surface'
+        text_color_dark: '--bos-color-on-surface_dark'
+        background_color: '--bos-color-on-container'
+        background_color_dark: '--bos-color-on-container_dark'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

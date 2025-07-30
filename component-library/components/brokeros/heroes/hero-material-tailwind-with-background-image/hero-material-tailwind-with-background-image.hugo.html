@@ -1,0 +1,49 @@
+{{ $bg_image := site.Params.brokeros_hero_component_background_image_default }}
+{{ $vertical_height := "h-full" }}
+
+{{ with .background_image }}
+  {{ $bg_image = . }}
+{{ end }}
+
+{{ with .vertical_height }}
+  {{ $vertical_height = . }}
+{{ end }}
+
+<!-- <div class="bg-(--bos-color-primary) bg-blend-soft-light pb-16 relative min-h-screen w-full bg-[url('{{ $bg_image }}')] bg-cover bg-center bg-no-repeat">-->
+<div class="c-hero-material-tailwind-with-background-image 
+            bg-({{ .background_color }}) 
+            bg-blend-soft-light relative min-h-{{ $vertical_height }} 
+            w-full bg-[url('{{ .background_image.image_path }}')] 
+            bg-cover 
+            bg-center 
+            bg-no-repeat"
+>
+  <div class="absolute inset-0 h-full w-full after:bg-(--bos-color-primary)"></div>
+    <div class="grid min-h-full px-8">
+      <div class="pt-20 container relative z-10 my-auto mx-auto grid place-items-center text-center">
+          <h3 class="block antialiased tracking-normal font-sans font-semibold text-({{ .announcement.text_color }}) text-lg !leading-snug lg:text-2xl">
+            {{ .announcement.announcement_text | safeHTML }}
+          </h3>
+          <h1 class="block antialiased tracking-normal font-sans font-semibold text-({{ .heading.text_color }}) my-4 text-3xl !leading-snug lg:text-5xl">
+            {{ .heading.heading_text | safeHTML }}
+          </h1>
+          <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-({{ .subheading.text_color }}) mb-10 max-w-2xl">
+            {{ .subheading.subheading_text | safeHTML }}
+          </p>
+          <div class="mt-6 mb-10 flex items-center gap-x-6">
+            {{ with .buttons }}
+                <div class="buttons">
+                    {{ range . }}
+                        {{ partial "bookshop" . }}
+                    {{ end }}
+                </div>
+            {{ end }}
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<section id="hero-bottom" class="pb-12">
+
+</section>

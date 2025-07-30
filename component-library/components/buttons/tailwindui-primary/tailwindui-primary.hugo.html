@@ -1,0 +1,20 @@
+<a 
+  class="tailwindui-primary-button 
+  inline-flex rounded-md 
+  bg-({{ .background_color }}) 
+  dark:bg-({{ .background_color_dark }})
+  text-({{ .text_color }}) 
+  dark:text-({{ .text_color_dark }}) 
+  hover:bg-({{ .hover }})
+  dark:hover:bg-({{ .hover_dark }}) 
+  px-3.5 py-2.5 text-sm font-semibold shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 
+  focus-visible:outline-white{{ .background_color }}" 
+  href="{{ .button_link }}"
+  {{ with .button_aria_label }}
+    aria-label="{{ . }}"
+  {{ end }}
+  >
+  <p>
+    {{ .button_text }}
+  </p>
+</a>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"
+itemscope
+  class="{{- if not site.Params.theme_switcher -}}
+    {{- site.Params.theme_default -}}
+  {{- end -}}"
+  data-theme="{{ site.Params.theme_default }}"
+>
+  {{ partial "head.html" . }}
+  <body>
+    <a href="#main" class="skip-button">Skip to main content</a>
+    {{ partial "header.html" . }}
+    <main id="main">
+      {{ block "main" . }}{{ end }} 
+    </main>
+    {{ partial "footer.html" . }}
+
+    {{ if site.Params.theme_demo_mode }}
+      <script>
+          var cookieTheme = getCookie();
+      if (cookieTheme) {
+        document.querySelector('html').setAttribute('data-theme', cookieTheme);
+      }
+      
+      function getCookie() {
+        try { return document.cookie.split('bos-data-theme=').pop(); }
+        catch (e) { console.log(e) }
+      }
+
+      </script>
+    {{ end }} 
+
+    <!-- LinkedIn Insights Tag -->
+    {{ if and site.Params.service_add_ons.linkedinInsightsTag.id (ne site.Params.service_add_ons.linkedinInsightsTag.id "LINKEDIN_INSIGHTS_ID") }}
+      {{ partialCached "brokeros/scripts/linkedin-insights-tag.html" .}}
+    {{ end }}
+
+    <!-- Zoho Sales IQ -->
+    {{ if and site.Params.service_add_ons.zohoSalesIq.id (ne site.Params.service_add_ons.zohoSalesIq.id "ZOHO_SALES_IQ_ID") }}
+      {{ partialCached "brokeros/scripts/zoho-sales-iq.html" .}}
+    {{ end }}
+  </body>
+</html>

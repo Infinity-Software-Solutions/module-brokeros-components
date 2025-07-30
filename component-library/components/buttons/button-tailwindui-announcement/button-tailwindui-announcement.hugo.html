@@ -1,0 +1,8 @@
+<div class="c-button-tailwindui-announcement relative rounded-full px-3 py-1 text-sm/6 text-({{ .announcement_text_color }}) dark:text-({{ .announcement_text_color_dark }}) ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+    {{ .announcement_text }}
+    <a href="{{ .button_link }}" class="font-semibold text-({{ .button_text_color }}) dark:text-({{ .button_text_color_dark }})">
+        <span aria-hidden="true" class="absolute inset-0"></span>
+        {{ .button_text }}
+        <span aria-hidden="true">&rarr;</span>
+    </a>
+</div>

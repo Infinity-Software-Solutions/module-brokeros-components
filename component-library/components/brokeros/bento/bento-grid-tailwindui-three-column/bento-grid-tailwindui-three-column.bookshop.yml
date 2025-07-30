@@ -1,0 +1,90 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Bento - Grid 3 Column"
+  description: A content grid with headlines, subtext and images.
+  icon:
+  tags:
+    - Content
+    - Grid
+    - Images
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_color: '--bos-color-surface'
+  background_color_dark: '--bos-color-surface-dark'
+  background_gradient:
+    from_color: '--bos-color-primary'
+    to_color: '--bos-color-container'
+  announcement:
+    announcement_text: Yep. We handle that.
+    text_color: '--bos-color-on-surface-variant'
+    text_color_dark: '--bos-color-on-surface-variant-dark'
+  heading:
+    heading_text: Optimizing Supply Chains
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+  column_1:
+    background_color: '--bos-color-surface'
+    background_color_dark: '--bos-color-surface_dark'
+    heading:
+      heading_text: 'Beautiful, super-smart websites.'
+      text_color: '--bos-color-on-surface'
+      text_color_dark: '--bos-color-on-surface-dark'
+    subheading:
+      subheading_text: 'Customized for your business, we provide over 25 freight-specific pages with content that allows you to compete with the top freight brokers.'
+      text_color: '--bos-color-on-surface'
+      text_color_dark: '--bos-color-on-surface-dark'
+    image:
+      image_path: '/images/bos-defaults/screenshots/brokeros-home-mobile-screenshot.webp'
+      image_alt: 'Mobile phone home screen showing website'
+  column_2_row_1:
+    background_color: '--bos-color-surface'
+    background_color_dark: '--bos-color-surface_dark'
+    heading:
+      heading_text: 'Fast. Really Fast.'
+      text_color: '--bos-color-on-surface'
+      text_color_dark: '--bos-color-on-surface-dark'
+    subheading:
+      subheading_text: "BrokerOS Web is built with performance in mind -- typically scoring over 95 with Google's page speed."
+      text_color: '--bos-color-on-surface'
+      text_color_dark: '--bos-color-on-surface-dark'
+    image:
+      image_path: '/images/bos-defaults/screenshots/bos-performance.webp'
+      image_alt: 'Mobile phone home screen showing website'
+  column_2_row_2:
+    background_color: '--bos-color-surface'
+    background_color_dark: '--bos-color-surface_dark'
+    heading:
+      heading_text: 'Know who is visitng your website.'
+      text_color: '--bos-color-on-surface'
+      text_color_dark: '--bos-color-on-surface-dark'
+    subheading:
+      subheading_text: "Know which companies and contacts are visiting your site in real-time -- super-charging your sales and marketing efforts."
+      text_color: '--bos-color-on-surface'
+      text_color_dark: '--bos-color-on-surface-dark'
+    image:
+      image_path: '/images/bos-defaults/screenshots/brokerpro-bento-security.webp'
+      image_alt: 'Graphic of a lock and shield to indicate security.'
+  column_3:
+    background_color: '--bos-color-surface'
+    background_color_dark: '--bos-color-surface_dark'
+    heading:
+      heading_text: 'Constant content improvements.'
+      text_color: '--bos-color-on-surface'
+      text_color_dark: '--bos-color-on-surface-dark'
+    subheading:
+      subheading_text: "Using AI, we benchmark your website content's performance against your competitors and rewrite it for you -- allowing you to continously improve your SEO rankings and take business away from the other guys."
+      text_color: '--bos-color-on-surface'
+      text_color_dark: '--bos-color-on-surface-dark'
+    image:
+      image_path: '/images/bos-defaults/screenshots/competitor-comparison-graph.png'
+      image_alt: 'Graphic of a lock and shield to indicate security.'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

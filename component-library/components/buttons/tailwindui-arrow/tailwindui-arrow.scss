@@ -1,0 +1,19 @@
+.tailwindui-arrow-button {
+  @apply text-sm/6 font-semibold text-gray-900;
+}
+
+.tailwindui-arrow-button p {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+}
+
+.tailwindui-arrow-button .button__icon {
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+}

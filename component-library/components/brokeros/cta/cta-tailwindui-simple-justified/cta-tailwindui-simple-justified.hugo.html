@@ -1,0 +1,24 @@
+<section aria-labelledby="call-to-action-text">
+  <div class="tailwindui-simple-justified-container">
+    <div class="c-bos-cta-tailwindui-simple-justified relative bg-({{ .background_color }}) dark:bg-({{ .background_color_dark }})">
+      <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
+        <h2 class="max-w-2xl text-4xl font-semibold tracking-tight text-({{ .heading.text_color }}) sm:text-5xl">
+          {{ .heading.heading_text }}
+          <br />
+            <div class="mt-6 markdown-text subheading-text text-({{ .subheading.text_color }}) dark:text-({{ .subheading.text_color_dark }})">
+              {{  .subheading.subheading_text | markdownify }}
+            </div>
+        </h2>
+        <div class="mt-10 flex items-center gap-x-6 lg:mt-0 lg:shrink-0">
+          {{ with .buttons }}
+            <div class="buttons">
+              {{ range . }}
+                {{ partial "bookshop" . }}
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

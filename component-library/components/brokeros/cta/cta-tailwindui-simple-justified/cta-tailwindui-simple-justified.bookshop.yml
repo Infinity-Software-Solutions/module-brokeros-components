@@ -1,0 +1,53 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "CTA - Simple Justified"
+  description: Simple call-to-action with brand colors.
+  icon: app_registration
+  tags:
+    - Call-to-Action
+    - Buttons
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_color: '--bos-color-container'
+  background_color_dark: '--bos-color-container-dark'
+  heading:
+    heading_text: Ready to Dive In?
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+  subheading:
+    subheading_text: Contact Sales today.
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+  buttons:
+    - _bookshop_name: buttons/tailwindui-primary
+      button_text: Get Started
+      button_link: /contact
+      button_aria_label: Get Started button.
+      background_color: '--bos-color-on-container'
+      hover_brightness: 0.85
+      text_color: '--bos-color-on-surface-dark'
+      background_color_dark: '--bos-color-on-container-dark'
+      hover: '--bos-color-container-variant-dark'
+      hover_dark: '--bos-color-container-variant'
+      text_color_dark: '--bos-color-on-surface'
+    - _bookshop_name: buttons/tailwindui-arrow
+      button_text: Learn More
+      button_icon: custom-icon-cloudcannon
+      button_link: https://www.brokeros.com
+      button_aria_label: Learn more button
+      background_color: '#034AD8'
+      hover_brightness: 0.85
+      text_color: '--bos-color-on-surface'
+      hover: '--bos-color-container-variant-dark'
+      hover_dark: '--bos-color-container-variant'
+      text_color_dark: '--bos-color-on-surface-dark'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

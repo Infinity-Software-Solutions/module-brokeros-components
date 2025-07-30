@@ -1,0 +1,54 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Feature - Product and Services with Icons"
+  description: Show key products and services.
+  icon: truck
+  tags: 
+    - Features
+    - Products
+    - Services
+    - Content
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_color: '--bos-color-container'
+  background_color_dark: '--bos-color-container'
+  enable_ctas: true
+  heading:
+    heading_text: Optimizing Supply Chains
+    text_color: '--bos-color-on-container'
+    text_color_dark: '--bos-color-on-container-dark'
+  subheading:
+    subheading_text: We are built from the ground up to deliver on your cross-border, full truckload, partial truckload, and warehousing needs.
+    text_color: '--bos-color-on-container'
+    text_color_dark: '--bos-color-on-container-dark'
+  products:
+    background_color: '--bos-color-container'
+    background_color_dark: '--bos-color-container-variant'
+    text_color: '--bos-color-on-container'
+    text_color_dark: '--bos-color-on-container-dark'
+    product_details:
+    - title: Full Truckload
+      icon: fas fa-truck text-white
+      description: Move your next shipment with confidence. From flatbed to dry-van, we have you covered.
+      cta_text: Learn More
+      cta_link: '#'
+    - title: Less-Than Truckload
+      icon: fas fa-truck-ramp-box text-white
+      description: Gain access to our vast network of regional and national LTL carriers, ensuring product safety and bill accuracy.
+      cta_text: Learn More
+      cta_link: '#'
+    - title: Cross-Border
+      icon: fas fa-earth-americas text-white
+      description: Your end-to-end solution for moving goods to and from Mexico and Canada.
+      cta_text: Learn More
+      cta_link: '#'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

@@ -1,0 +1,133 @@
+#See https://gohugo.io/configuration/params/
+#Use the params key for custom parameters.
+
+# theme-mode
+theme_switcher = true
+theme_demo_mode = true
+
+theme_default = "brokeros-regal-blue"  
+
+############################# Plugins ##############################
+[[plugins.js]]
+link = "js/accordion.js"
+lazy = true
+
+[google_keys]
+    google_tag_manager = "G-7BVGMZG6VJ" # example: G-XXXXXXXXXX
+    google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
+    google_recaptcha_sitekey = "6LdoC2sqAAAAAFjxyL4WHxIUGxhd5MNy4EjI_Al4"
+    google_recaptcha_secretkey = "6LdoC2sqAAAAABl7ZKjJtrm2vdyWFwA22G40u5gh"
+
+[form_handling]
+    form_provider = "zoho_forms"
+
+    [form_handling.form_action]
+    # Nickels contact_form = "https://forms.zohopublic.com/brokerpro/form/NickelsContactUs/formperma/QcYsMsxHpK-gQtbTwVzaYmcGKqfFpPjWk3-qFTnBD5g/htmlRecords/submit"
+    contact_form = "https://forms.zohopublic.com/brokerpro/form/BrokerOscomContactUs/formperma/m70xLw-ng5D92fFngO-o3dJwDJUdEGXq-vGJO8Lpqdc/htmlRecords/submit"
+    freight_quote_form = "https://forms.zohopublic.com/brokerpro/form/BrokerOscomFreightQuote/formperma/cPH-z97TbZvabdZZjurHTCPdeyhHOEB4KFGnHqityMs/htmlRecords/submit"
+    review_request_form = "TBD"
+
+    [form_handling.form_redirect]
+    contact_form = "contact/thank-you-for-contacting-us"
+    freight_quote_form = "contact/thank-you-for-contacting-us"
+    review_request_form = "contact/thank-you-for-contacting-us"
+
+[form_provider]
+    [form_provider.zoho_forms]
+        [form_provider.zoho_forms.field_definitions]
+            [form_provider.zoho_forms.field_definitions.first_name]
+            type = "text"
+            maxlength = 255
+            name = "Name_First"
+            id = "Name_First"
+            fieldType = 7
+            placeholder = "First Name"
+            [form_provider.zoho_forms.field_definitions.last_name]
+            type = "text"
+            maxlength = 255
+            name = "Name_Last"
+            id = "Name_Last"
+            fieldType = 7
+            placeholder = "Last Name"
+            [form_provider.zoho_forms.field_definitions.company]
+            type = "text"
+            maxlength = 255
+            name = "SingleLine"
+            id = "company"
+            fieldType = 1
+            placeholder = "Company"
+            [form_provider.zoho_forms.field_definitions.email]
+            type = "text"
+            maxlength = 255
+            name = "Email"
+            id = "email"
+            fieldType = 9
+            placeholder = "you@company.com"
+            [form_provider.zoho_forms.field_definitions.phone]
+            type = "text"
+            maxlength = 20
+            fieldType = 11
+            name = "PhoneNumber_countrycode"
+            id = "international_PhoneNumber_countrycode"
+            compname = "PhoneNumber"
+            phoneFormat = 1
+            isCountryCodeEnabled = false
+            placeholder = "123-456-7890"
+            [form_provider.zoho_forms.field_definitions.message]
+            type = "text"
+            maxlength = 65535
+            name = "MultiLine"
+            id = "MultiLine-message"
+            rows = 4
+            placeholder = "Let us know how we can help."
+            [form_provider.zoho_forms.field_definitions.origination_city]
+            type = "text"
+            fieldType = 11
+            maxlength = 255
+            name = "SingleLine1"
+            id = "origination_city"
+            rows = 1
+            placeholder = "Decatur"
+            [form_provider.zoho_forms.field_definitions.origination_state]
+            type = "text"
+            fieldType = 1
+            maxlength = 255
+            name = "SingleLine2"
+            id = "origination_state"
+            [form_provider.zoho_forms.field_definitions.destination_city]
+            type = "text"
+            fieldType = 1
+            maxlength = 255
+            name = "SingleLine3"
+            id = "destination_city"
+            rows = 1
+            placeholder = "Hamilton"
+            [form_provider.zoho_forms.field_definitions.destination_state]
+            type = "text"
+            fieldType = 1
+            maxlength = 255
+            name = "SingleLine4"
+            id = "destination_state"
+            [form_provider.zoho_forms.field_definitions.pickup_date]
+            type = "text"
+            fieldType = 1
+            maxlength = 25
+            name = "Date"
+            id = "pickup_date"
+            placeholder = "mm/dd/yyyy"
+            [form_provider.zoho_forms.field_definitions.delivery_date]
+            type = "text"
+            fieldType = 11
+            maxlength = 25
+            name = "Date1"
+            id = "delivery_date"
+            placeholder = "mm/dd/yyyy"
+
+
+            
+
+[service_add_ons]
+    [service_add_ons.linkedinInsightsTag]
+    ID = '5632140'
+    [service_add_ons.zohoSalesIq]
+    ID = 'siq8ca65492fc233aca7fa3acbb4455b120c01529ff8bca74b9177b5252d8dbac52'

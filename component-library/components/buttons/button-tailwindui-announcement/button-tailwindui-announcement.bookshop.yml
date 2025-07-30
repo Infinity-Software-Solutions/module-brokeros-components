@@ -1,0 +1,28 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Button - Announcement
+  description: "Announcement with Button."
+  icon: "smart_button"
+  tags:
+    - Solid background
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  announcement_text: We now ship heavy haul loads!
+  announcement_text_color: '--bos-color-on-surface'
+  announcement_text_color_dark: '--bos-color-on-surface-dark'
+  button_text: Learn More
+  button_link: https://www.brokeros.com
+  button_text_color: '--bos-color-on-surface'
+  hover: '--bos-color-container-variant-dark'
+  hover_dark: '--bos-color-container-variant'
+  button_text_color_dark: '--bos-color-on-surface-dark'
+  button_aria_label: Learn more button
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

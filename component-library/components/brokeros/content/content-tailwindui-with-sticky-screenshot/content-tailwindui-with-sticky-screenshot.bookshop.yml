@@ -1,0 +1,54 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Content with sticky image"
+  description: Text next to sticky image.
+  icon: "chrome_reader_mode"
+  tags:
+    - Content
+    - Image
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_color: '--bos-color-surface'
+  background_color_dark: '--bos-color-surface-dark'
+  announcement:
+    announcement_text: Yep. We handle that.
+    text_color: '--bos-color-on-surface-variant'
+    text_color_dark: '--bos-color-on-surface-variant-dark'
+  heading:
+    heading_text: Optimizing Supply Chains
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+  subheading:
+    subheading_text: >-
+      We are built from the ground up to deliver on your cross-border, full
+      truckload, partial truckload, and warehousing needs.
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+  feature_image:
+    image_path: /images/bos-defaults/heroes/truck-on-bridge-2160w-1440h.png
+    alt_text: A photograph of a semi truck driving over a bridge.
+  text:
+    text_content: >-
+      BrokerOS provides a flexible Git-backed CMS that specialises in editing
+      markdown and data files.
+
+
+      Visual editing allows you to preview your changes live before you save
+      them.
+
+
+      Git-backed means you can keep all your familiar git workflows, while
+      providing an easy-to-understand interface for non-technical editors to
+      collaborate via Git.
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

@@ -1,0 +1,37 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Timeline with Dates and Header"
+  description: Company timeline with dates, header text, and description.
+  icon: clock
+  tags:
+    - Timeline
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_color: '--bos-color-surface'
+  background_color_dark: '--bos-color-surface-variant'
+  background_gradient:
+    from_color: '--bos-color-primary'
+    to_color: '--bos-color-container'
+  timeline_events:
+    - headline_text: Company Launched
+      date: Sept. 2000
+      headline_subtext: Formed Infinity Software Solutions, Inc. and changed name of our original TMS to “BrokerPlus”.
+    - headline_text: Launched WebTrack
+      date: Dec. 2005
+      headline_subtext: Launched WebTrack, one of the first customer and carrier portals in the industry.
+    - headline_text: Launched BrokerPro
+      date: Apr. 2015
+      headline_subtext: Introduced BrokerPro TMS at the TIA Capital Ideas Conference in Orlando, FL.
+    - headline_text: Launched BrokerPro 5.0
+      date: Sep. 2024
+      headline_subtext: The new release features an entirely new, streamlined interface that automates common, repetitive actities faced by freight brokers.
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

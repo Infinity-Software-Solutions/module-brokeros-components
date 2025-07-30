@@ -1,0 +1,40 @@
+header:
+  logo: /images/bos-defaults/brokeros-logo-blue.png
+  logo_alt_text: BrokerOS
+  logo_url: /
+  background_color: transparent
+  text_color: '#333232'
+  text_hover_color: '#034AD8'
+  links:
+    - text: Contact
+      link: /contact
+    - text: About
+      link: /about
+    - text: BrokerPro TMS
+      link: https://www.brokerpro.com
+footer:
+  logo: /images/logos/brokeros-logo-white.png
+  logo_url: /
+  logo_alt_text: BrokerOS
+  background_color: '#333232'
+  text_color: '#ffffff'
+  social:
+    - icon: fab fa-linkedin
+      link: https://www.linkedin.com/company/brokerpro
+      name: LinkedIn
+    - icon: fab fa-facebook
+      link: https://www.facebook.com/issbrokerpro
+      name: Facebook
+    - icon: fab fa-instagram
+      link: https://www.instagram.com/issbrokerpro/
+      name: Instagram
+    - icon: fab fa-youtube
+      link: https://www.youtube.com/@brokerprotms4569/videos
+      name: YouTube
+  links:
+    - text: Blog
+      link: /blog/
+    - link: https://brokeros.com/
+      text: BrokerOS
+  copyright_start_date: 2025
+  copyright_statement: Infinity Software Solutions. All rights reserved.

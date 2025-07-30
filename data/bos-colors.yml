@@ -1,0 +1,32 @@
+- name: Primary
+  value: '--bos-color-primary'
+- name:  'Primary Dark'
+  value: '--bos-color-primary Dark'
+- name: Surface
+  value: '--bos-color-surface'
+- name: Surface Dark
+  value: '--bos-color-surface-dark'
+- name: Color on Surface
+  value: '--bos-color-on-surface'
+- name: Color on Surface Variant
+  value: '--bos-color-on-surface-variant'
+- name: Color on Surface Dark
+  value: '--bos-color-on-surface-dark'
+- name: Color on Surface Dark Variant
+  value: '--bos-color-on-surface-variant-dark'
+- name: Container
+  value: '--bos-color-container'
+- name: Container Variant
+  value: '--bos-color-container-variant'
+- name: Container Dark
+  value: '--bos-color-container-dark'
+- name: Container Dark Variant
+  value: '--bos-color-container-variant-dark'
+- name: Color on Container
+  value: '--bos-color-on-container'
+- name: Color on Container Variant
+  value: '--bos-color-on-container-variant'
+- name: Color on Container Dark
+  value: '--bos-color-on-container-dark'
+- name: Color on Container Overlay
+  value: '--bos-color-on-container-overlay'

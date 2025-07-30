@@ -1,0 +1,65 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Stats - Simple Grid"
+  description: Add 4 statistics on a simple grid
+  icon: Chart-bar
+  tags: 
+    - Heading
+    - Text
+    - Metrics
+  remove_extra_inputs: true 
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_color: '--bos-color-surface'
+  background_color_dark: '--bos-color-surface-dark'
+  heading:
+    heading_text: We approach work as a place to make the world better
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+  subheading:
+    subheading_text: We improve our customers' lives by making their businesses easier to run. We help make the world a better place because our customers are in the business of ensuring critical freight is delivered efficiently and on time.
+    text_color: '--bos-color-on-surface'
+    text_color_dark: '--bos-color-on-surface-dark'
+  statistics:
+    - number: 4K
+      number_text_color: '--bos-color-on-surface'
+      number_text_color_dark: '--bos-color-on-surface_dark' 
+      metric: "Users on the platform"
+      metric_text_color: '--bos-color-on-surface'
+      metric_text_color_dark: '--bos-color-on-surface_dark' 
+      subheading: "We have successfully onboarded over 4,000 users. Maybe we're really good at training users -- or maybe the BrokerPro TMS is really easy to use. It's probably a bit of both."
+      subheading_text_color: '--bos-color-on-container'
+      subheading_text_color_dark: '--bos-color-on-container_dark'
+      background_color: '--bos-color-container'
+      background_color_dark: '--bos-color-container_dark'
+    - number: "$2.8 billion"
+      number_text_color: '--bos-color-on-surface'
+      number_text_color_dark: '--bos-color-on-surface_dark' 
+      metric: "We’re proud that our customers have made nearly $3 billion in total revenue."
+      metric_text_color: '--bos-color-on-surface'
+      metric_text_color_dark: '--bos-color-on-surface_dark' 
+      subheading: "Our customers thrive -- even during freight market downturns."
+      subheading_text_color: '--bos-color-on-container'
+      subheading_text_color_dark: '--bos-color-on-container_dark'
+      background_color: '--bos-color-container'
+      background_color_dark: '--bos-color-container-dark'
+    - number: "34%"
+      number_text_color: '--bos-color-on-surface'
+      number_text_color_dark: '--bos-color-on-surface_dark' 
+      metric: "Increase in load volume"
+      metric_text_color: '--bos-color-on-surface'
+      metric_text_color_dark: '--bos-color-on-surface_dark' 
+      subheading: "Most of our customers are really smart and would grow anyway, but BrokerPro has made it easier for them to grow faster while shedding operational overhead."
+      subheading_text_color: '--bos-color-on-container'
+      subheading_text_color_dark: '--bos-color-on-container_dark'
+      background_color: '--bos-color-container'
+      background_color_dark: '--bos-color-container-dark'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

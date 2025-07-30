@@ -1,0 +1,344 @@
+<!-- TODO: Investigate TailwindPlus EL -->
+{{ $form_action := site.Params.form_handling.form_action.freight_quote_form }}
+{{ $form_provider := site.Params.form_handling.form_provider }}
+
+<section>
+    <div class="c-cta-form-tailwindui-inline-quote-request bos-section-inline-form rounded-xl bg-(--bos-color-container-variant) dark:bg-(--bos-color-container-variant)">
+        <div class="bg-({{ .background_color }}) dark:bg-({{ .background_color_dark }})">
+            <button onclick="toggleAccordion(1)" class="w-full flex justify-between items-center py-5 text-({{ .heading.text_color }}) dark:text-({{ .heading.text_color_dark }})">
+                <span>{{ .heading.heading_text }}</span>
+                <span id="icon-1" class="text-({{ .heading.text_color }}) dark:text-({{ .heading.text_color_dark }}) transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+                </span>
+            </button>
+            <div id="content-1" class="max-h-4 overflow-hidden transition-all duration-300 ease-in-out">
+                <form action="{{ $form_action }}" method="POST" class="mx-auto mt-16 max-w-5xl sm:mt-20">
+                    {{ with .form }}
+                        <div class="grid grid-cols-4 gap-2">
+                            <div class="col-span-2">
+                                <div class="flex justify-between">
+                                    <label for="first_name" class="block text-sm/6 font-medium text-({{ .first_name.text_color }}) dark:text-({{ .first_name.text_color_dark }})">
+                                        {{ .first_name.label }}
+                                    </label>
+                                </div>
+                                <div class="mt-2">
+                                    <input  type="{{ site.Params.form_provider.zoho_forms.field_definitions.last_name.type }}" 
+                                    maxlength="{{ site.Params.form_provider.zoho_forms.field_definitions.first_name.maxLength }}"
+                                    name="{{ site.Params.form_provider.zoho_forms.field_definitions.first_name.name }}"
+                                    id="{{ site.Params.form_provider.zoho_forms.field_definitions.first_name.id }}" 
+                                    fieldType="{{ site.Params.form_provider.zoho_forms.field_definitions.first_name.fieldType }}"
+                                    autocomplete="given-name" 
+                                    class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-(--bos-color-on-surface) "
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-span-2">
+                                <div class="flex justify-between">
+                                    <label for="{{ site.Params.form_provider.zoho_forms.field_definitions.last_name.id }}" 
+                                            class="block text-sm/6 font-semibold text-({{ .last_name.text_color }}) dark:text-({{ .last_name.text_color_dark }})">
+                                        {{ .last_name.label }}
+                                    </label>
+                                </div>
+                                <div class="mt-2">
+                                    <input  type="{{ site.Params.form_provider.zoho_forms.field_definitions.last_name.type }}" 
+                                            maxlength="{{ site.Params.form_provider.zoho_forms.field_definitions.last_name.maxLength }}"
+                                            name="{{ site.Params.form_provider.zoho_forms.field_definitions.last_name.name }}"
+                                            id="{{ site.Params.form_provider.zoho_forms.field_definitions.last_name.id }}" 
+                                            fieldType="{{ site.Params.form_provider.zoho_forms.field_definitions.last_name.fieldType }}"
+                                            autocomplete="family-name" 
+                                            class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-(--bos-color-on-surface) "
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between">
+                                    <label for="{{ site.Params.form_provider.zoho_forms.field_definitions.email.id }}" class="block text-sm/6 font-semibold text-({{ .email.text_color }}) dark:text-({{ .email.text_color_dark }})">
+                                        {{ .email.label }}
+                                    </label>
+                                    <!-- <span class="text-sm/6 text-gray-500" id="email-optional">Optional</span> -->
+                                </div>
+                                <div class="mt-2">
+                                    <input  type="{{ site.Params.form_provider.zoho_forms.field_definitions.email.type }}" 
+                                            name="{{ site.Params.form_provider.zoho_forms.field_definitions.email.name }}" 
+                                            id="{{ site.Params.form_provider.zoho_forms.field_definitions.email.id }}" 
+                                            fieldType="{{ site.Params.form_provider.zoho_forms.field_definitions.email.fieldType }}"
+                                            placeholder="{{ site.Params.form_provider.zoho_forms.field_definitions.email.placeholder }}"
+                                            autocomplete="email" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-(--bos-color-on-surface)"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between">
+                                    <label for="{{ site.Params.form_provider.zoho_forms.field_definitions.phone.id }}" class="block text-sm/6 font-semibold text-({{ .phone.text_color }}) dark:text-({{ .phone.text_color_dark }})">
+                                        {{ .phone.label }}
+                                    </label>
+                                    <!-- <span class="text-sm/6 text-gray-500" id="email-optional">Optional</span> -->
+                                </div>
+                                <div class="mt-2">
+                                    <input  type="{{ site.Params.form_provider.zoho_forms.field_definitions.phone.type }}" 
+                                            compname = "{{ site.Params.form_provider.zoho_forms.field_definitions.phone.compname }}"
+                                            phoneFormat = "{{ site.Params.form_provider.zoho_forms.field_definitions.phone.phoneFormat }}"
+                                            isCountryCodeEnabled = "{{ site.Params.form_provider.zoho_forms.field_definitions.phone.isCountryCodeEnabled }}"
+                                            maxlength = "{{ site.Params.form_provider.zoho_forms.field_definitions.phone.maxlength }}"
+                                            fieldType = "{{ site.Params.form_provider.zoho_forms.field_definitions.phone.fieldType }}"
+                                            name="{{ site.Params.form_provider.zoho_forms.field_definitions.phone.name }}" 
+                                            id="{{ site.Params.form_provider.zoho_forms.field_definitions.phone.id }}" 
+                                            placeholder= "{{ site.Params.form_provider.zoho_forms.field_definitions.phone.placeholder }}"
+                                            class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-(--bos-color-on-surface)" 
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-span-2">
+                                <div class="flex justify-between">
+                                    <label for="{{ site.Params.form_provider.zoho_forms.field_definitions.company.id }}" class="block text-sm/6 font-semibold text-({{ .company.text_color }}) dark:text-({{ .company.text_color_dark }})">
+                                        {{ .company.label }}
+                                    </label>
+                                </div>
+                                <div class="mt-2">
+                                    <input  type="{{ site.Params.form_provider.zoho_forms.field_definitions.company.type }}" 
+                                            name="{{ site.Params.form_provider.zoho_forms.field_definitions.company.name }}" 
+                                            id="{{ site.Params.form_provider.zoho_forms.field_definitions.company.id }}" 
+                                            fieldType = "{{ site.Params.form_provider.zoho_forms.field_definitions.company.fieldType }}"
+                                            autocomplete="organization" 
+                                            class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-(--bos-color-on-surface) "
+                                    />
+                                </div>
+                            </div>
+                            
+                            <div class="pt-6">
+                                <h2 class="mt-6 text-left text-lg/8 font-semibold text-({{ .origination_header.text_color }}) dark:text-({{ .origination_header.text_color }})">
+                                    {{ .origination_header.label}}
+                                </h2>
+                            </div>
+                            <div>
+                                <div class="flex justify-between pt-6">
+                                    <label for="origination_city" class="block text-sm/6 font-medium text-({{ .origination_city.text_color }}) dark:text-({{ .origination_city.text_color_dark }})">
+                                        {{ .origination_city.label }}    
+                                    </label>
+                                </div>
+                                <div class="mt-2">
+                                    <input  type="{{ site.Params.form_provider.zoho_forms.field_definitions.origination_city.type }}" 
+                                            name="{{ site.Params.form_provider.zoho_forms.field_definitions.origination_city.name }}" 
+                                            id="{{ site.Params.form_provider.zoho_forms.field_definitions.origination_city.id }}" 
+                                            fieldType = "{{ site.Params.form_provider.zoho_forms.field_definitions.origination_city.fieldType }}"
+                                            placeholder ="{{ site.Params.form_provider.zoho_forms.field_definitions.origination_city.placeholder }}" 
+                                            class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-(--bos-color-on-surface) "
+                                    />
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between pt-6">
+                                    <label for="origination_state" class="block text-sm/6 font-medium text-({{ .origination_state_province.text_color }}) dark:text-({{ .origination_state_province.text_color_dark }})">
+                                        {{ .origination_state_province.label }}
+                                    </label>
+                                </div>
+                                <div class="mt-2">
+                                    <select id="origination_state" name="origination_state" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-(--bos-color-on-surface) sm:text-sm/6">
+                                        {{ if .origination_state_province.enable.canada }}
+                                            <option value="" disabled selected>Canada</option>
+                                            {{ range site.Data.countries_and_states.canada }}
+                                                <option value="{{ .abbreviation }}">{{ .name }}</option>
+                                            {{ end }}
+                                        {{ end }}
+                                        {{ if .origination_state_province.enable.mexico }}
+                                            <option value="" disabled selected>Mexico</option>
+                                            {{ range site.Data.countries_and_states.mexico }}
+                                                <option value="{{ .abbreviation }}">{{ .name }}</option>
+                                            {{ end }}
+                                        {{ end }}
+                                        {{ if .origination_state_province.enable.united_states }}
+                                            <option value="" disabled selected>United States</option>
+                                            {{ range site.Data.countries_and_states.united_states }}
+                                                <option value="{{ .abbreviation }}">{{ .name }}</option>
+                                            {{ end }}
+                                        {{ end }}
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between pt-6">
+                                    <label for="pickup_date" class="block text-sm/6 font-medium text-({{ .pickup_date.text_color }}) dark:text-({{ .pickup_date.text_color_dark }})">
+                                        {{ .pickup_date.label }}
+                                </div>
+                                <div class="mt-2"
+                                    x-data
+                                    x-init="
+                                        flatpickr($refs.dateInput, {
+                                        altInput: true,
+                                        altFormat: 'F j, Y',
+                                        dateFormat: 'd-M-Y'
+                                        })
+                                    "
+                                    >
+                                    <input  x-ref="dateInput" type="{{ site.Params.form_provider.zoho_forms.field_definitions.pickup_date.type }}" 
+                                            name="{{ site.Params.form_provider.zoho_forms.field_definitions.pickup_date.name }}" 
+                                            id="{{ site.Params.form_provider.zoho_forms.field_definitions.pickup_date.id }}" 
+                                            fieldType = "{{ site.Params.form_provider.zoho_forms.field_definitions.pickup_date.fieldType }}"
+                                            placeholder ="{{ site.Params.form_provider.zoho_forms.field_definitions.pickup_date.placeholder }}" 
+                                            class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-(--bos-color-on-surface) "
+                                    />
+                                </div>
+                            </div>
+
+                            
+                            <div>
+                                <h2 class="mt-6 text-left text-lg/8 font-semibold text-({{ .destination_header.text_color }}) dark:text-({{ .destination_header.text_color }})">
+                                    {{ .destination_header.label}}
+                                </h2>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between pt-6">
+                                    <label for="destination_city" class="block text-sm/6 font-medium text-({{ .destination_city.text_color }}) dark:text-({{ .destination_city.text_color_dark }})">
+                                        {{ .destination_city.label }}    
+                                    </label>
+                                </div>
+                                <div class="mt-2">
+                                    <input  type="{{ site.Params.form_provider.zoho_forms.field_definitions.destination_city.type }}" 
+                                            name="{{ site.Params.form_provider.zoho_forms.field_definitions.destination_city.name }}" 
+                                            id="{{ site.Params.form_provider.zoho_forms.field_definitions.destination_city.id }}" 
+                                            fieldType = "{{ site.Params.form_provider.zoho_forms.field_definitions.destination_city.fieldType }}"
+                                            placeholder ="{{ site.Params.form_provider.zoho_forms.field_definitions.destination_city.placeholder }}" 
+                                            class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-(--bos-color-on-surface) "
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between pt-6">
+                                   <label for="destination_state_province" class="block text-sm/6 font-medium text-({{ .destination_state_province.text_color }}) dark:text-({{ .destination_state_province.text_color_dark }})">
+                                        {{ .destination_state_province.label }}
+                                    </label>
+                                </div>
+                                <div class="mt-2">
+                                    <select 
+                                        name="{{ site.Params.form_provider.zoho_forms.field_definitions.destination_city.name }}" 
+                                        id="{{ site.Params.form_provider.zoho_forms.field_definitions.destination_city.id }}" 
+                                        fieldType = "{{ site.Params.form_provider.zoho_forms.field_definitions.destination_city.fieldType }}"
+                                        class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-(--bos-color-on-surface) "
+                                    >
+                                        {{ if .destination_state_province.enable.canada }}
+                                            <option value="" disabled selected>Canada</option>
+                                            {{ range site.Data.countries_and_states.canada }}
+                                                <option value="{{ .abbreviation }}">{{ .name }}</option>
+                                            {{ end }}
+                                        {{ end }}
+                                        {{ if .destination_state_province.enable.mexico }}
+                                            <option value="" disabled selected>Mexico</option>
+                                            {{ range site.Data.countries_and_states.mexico }}
+                                                <option value="{{ .abbreviation }}">{{ .name }}</option>
+                                            {{ end }}
+                                        {{ end }}
+                                        {{ if .destination_state_province.enable.united_states }}
+                                            <option value="" disabled selected>United States</option>
+                                            {{ range site.Data.countries_and_states.united_states }}
+                                                <option value="{{ .abbreviation }}">{{ .name }}</option>
+                                            {{ end }}
+                                        {{ end }}
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between pt-6">
+                                    <label for="delivery_date" class="block text-sm/6 font-medium text-({{ .delivery_date.text_color }}) dark:text-({{ .delivery_date.text_color_dark }})">
+                                        {{ .delivery_date.label }}
+                                    </label>
+                                </div>
+                                <div class="mt-2"
+                                    x-data
+                                    x-init="
+                                        flatpickr($refs.dateInput, {
+                                        altInput: true,
+                                        altFormat: 'F j, Y',
+                                        dateFormat: 'd-M-Y'
+                                        })
+                                    "
+                                    >
+                                    <input  x-ref="dateInput" type="{{ site.Params.form_provider.zoho_forms.field_definitions.delivery_date.type }}" 
+                                            name="{{ site.Params.form_provider.zoho_forms.field_definitions.delivery_date.name }}" 
+                                            id="{{ site.Params.form_provider.zoho_forms.field_definitions.delivery_date.id }}" 
+                                            fieldType = "{{ site.Params.form_provider.zoho_forms.field_definitions.delivery_date.fieldType }}"
+                                            placeholder ="{{ site.Params.form_provider.zoho_forms.field_definitions.delivery_date.placeholder }}" 
+                                            class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-(--bos-color-on-surface) "
+                                    />
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h2 class="mt-6 text-left text-lg/8 font-semibold text-({{ .message.text_color }}) dark:text-({{ .message.text_color_dark }})">
+                                    {{ .message.label }}
+                                </h2>
+                            </div>
+                            <div class="col-span-3 mt-6">
+                                
+                                <div class="mt-2">
+                                    <textarea name="{{ site.Params.form_provider.zoho_forms.field_definitions.message.name }}"
+                                            maxlength="{{ site.Params.form_provider.zoho_forms.field_definitions.message.maxlength }}"
+                                            placeholder="{{ site.Params.form_provider.zoho_forms.field_definitions.message.placeholder }}"
+                                            id="{{ site.Params.form_provider.zoho_forms.field_definitions.message.id }}" 
+                                            rows="{{ site.Params.form_provider.zoho_forms.field_definitions.message.rows }}" 
+                                            class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-(--bos-color-on-surface) ">
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    {{ end }}     
+                    <div class="mt-10 col-span-2 col-start-2">
+                        {{ with .buttons }}
+                            <div class="buttons">
+                                {{ range . }}
+                                    {{ partial "bookshop" . }}
+                                {{ end }}
+                            </div>
+                        {{ end }}
+                    </div>
+                    <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="{{ site.Params.google_keys.google_recaptcha_sitekey}}"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
+    <script
+    defer
+    src="https://unpkg.com/alpinejs-form-validation@latest/dist/validation.min.js"
+    ></script>
+
+    <script defer src="https://unpkg.com/alpinejs@latest/dist/cdn.min.js"></script>
+
+
+    <script>
+    function toggleAccordion(index) {
+        const content = document.getElementById(`content-${index}`);
+        const icon = document.getElementById(`icon-${index}`);
+    
+        // SVG for Minus icon
+        const minusSVG = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+            <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+        </svg>
+        `;
+    
+        // SVG for Plus icon
+        const plusSVG = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+            <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+        </svg>
+        `;
+    
+        // Toggle the content's max-height for smooth opening and closing
+        if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+        content.style.maxHeight = '0';
+        icon.innerHTML = plusSVG;
+        } else {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.innerHTML = minusSVG;
+        }
+    }
+    </script>
+</section>
